@@ -35,7 +35,7 @@ export class NavService {
       type: 'sub',
       active: false,
       level: 1,
-      children: [
+    /*  children: [
         {
           title: 'slider filter search',
           path: '/theme/slider-filter-search',
@@ -100,7 +100,7 @@ export class NavService {
           path: '/theme/map-h-search',
           type: 'link',
         },
-      ],
+      ],*/
     },
     {
       title: 'Annonce',
@@ -108,7 +108,7 @@ export class NavService {
       type: 'sub',
       level: 1,
       active: false,
-      children: [
+     /* children: [
         {
           title: 'grid View',
           type: 'sub',
@@ -373,14 +373,14 @@ export class NavService {
             },
           ],
         },
-      ],
+      ],*/
     },
     {
       title: 'Bien immobilier',
       icon: 'link',
       type: 'sub',
       active: false,
-      children: [
+    /*  children: [
         {
           title: 'sticky tab or classic',
           path: '/property/sticky-tab',
@@ -427,10 +427,10 @@ export class NavService {
           type: 'link',
           badgeIcon: true,
         },
-      ],
+      ],*/
     },
     // to comment before the demo
-    {
+   /* {
       title: 'pages',
       icon: 'layers',
       active: false,
@@ -936,7 +936,7 @@ export class NavService {
           type: 'link',
         },
       ],
-    },
+    },*/
     {
       title: 'agents',
       icon: 'user',
@@ -944,7 +944,7 @@ export class NavService {
       right: true,
       level: 1,
       type: 'sub',
-      children: [
+     /* children: [
         {
           title: 'Agent Profile',
           path: '/agent/agent-profile',
@@ -967,7 +967,7 @@ export class NavService {
           badge: true,
           badgeText: 'New',
         },
-      ],
+      ],*/
     },
     {
       title: 'contact',
@@ -977,7 +977,7 @@ export class NavService {
       type: 'sub',
       level: 1,
       children: [
-        {
+      /*  {
           title: 'Contact us 1',
           path: '/contact/contact-1',
           type: 'link',
@@ -991,7 +991,7 @@ export class NavService {
           title: 'Contact us 3',
           path: '/contact/contact-3',
           type: 'link',
-        },
+        },*/
       ],
     },
   ];
