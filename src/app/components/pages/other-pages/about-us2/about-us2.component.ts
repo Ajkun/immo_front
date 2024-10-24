@@ -22,9 +22,9 @@ export class AboutUs2Component {
   public themeLogo = 'assets/images/logo/2.png';
   public footerLogo = 'assets/images/logo/footer-logo.png';
   public bgImage = 'assets/images/parallax/3.jpg';
-  public title = 'About Us';
+  public title = 'A propos de nous';
   public parent = 'Home';
-  public child = 'About Us';
+  public child = 'A propos de nous';
   public tagClass = 'color-2';
 
   public aboutDesc = 'Elegant retreat in Coral Gables setting. This home provides entertaining spaces with kitchen opening';

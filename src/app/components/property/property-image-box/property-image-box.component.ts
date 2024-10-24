@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Select, Store } from '@ngxs/store';
 import { Observable } from 'rxjs';
-import { latestForRent, propertyDetailsData } from '../../../shared/interface/property';
+import { latestForRent, property, propertyDetailsData } from '../../../shared/interface/property';
 import { PropertyService } from '../../../shared/services/property.service';
 import { imageState } from '../../../shared/store/states/property-images.state';
 import { getImages } from '../../../shared/store/actions/property-images.action';
@@ -38,6 +38,10 @@ export class PropertyImageBoxComponent {
   public theme_default3 = '#ff5c41';
   public theme_default4 = '#ff8c41';
 
+
+  public property : property | undefined;
+  public properties : property[];
+
   @Select(imageState.images) image$: Observable<latestForRent[]>;
 
   constructor(private propertyService: PropertyService,private route: ActivatedRoute,private store: Store) {
@@ -71,6 +75,25 @@ export class PropertyImageBoxComponent {
         }
       }
     });
+
+    this.route.paramMap.subscribe(params => {
+      const id = params.get('id');
+      if (id) {
+        this.loadProperty(parseFloat (id));
+      }
+    });   
+  }
+
+  loadProperty(id: number) {
+    this.propertyService.getPropertyById(id).subscribe(
+      (data) => {
+        this.property = data;
+       // console.log(data)
+      },
+      (error) => {
+        console.error('Erreur lors de la récupération de la propriété', error);
+      }
+    );
   }
 
   ngOnDestroy(): void {

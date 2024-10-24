@@ -2,7 +2,7 @@ import { footerBlogData } from "../interface/footer"
 
 export const footerAboutData = [
     {
-        title : 'About us',
+        title : 'A propos de nous',
         path : '/page/other-pages/about-us-2',
     },
     {
@@ -64,15 +64,15 @@ export const tagFooterData = [
 
 export const usefulLinkFooterData = [
     {
-        title : 'About us',
+        title : 'A Propos de nous',
         path : '/page/other-pages/about-us-2',
     },
     {
-        title : 'New Arrivals',
+        title : 'Nouvel arivage',
         path : '/listing/grid-view/2-grid/left-sidebar',
     },
     {
-        title : 'Agency',
+        title : 'Agence',
         path : '/page/agency/agency-grid',
     },
     {
@@ -91,7 +91,7 @@ export const featuresFooterData = [
         path : '/page/other-pages/services',
     },
     {
-        title : 'Agency',
+        title : 'Agence',
         path : '/page/agency/agency-list',
     },
     {
@@ -99,11 +99,11 @@ export const featuresFooterData = [
         path : '/agent/agent-grid',
     },
     {
-        title : 'Pricing',
+        title : 'Prix',
         path : '/page/other-pages/pricing',
     },
     {
-        title : 'Favourites',
+        title : 'Favoris',
         path : '/page/user/favourite',
     },
 ]
@@ -133,22 +133,18 @@ export const socialFooterData = [
 
 export const buyFooterData = [
     {
-        title : 'Home For Sale',
+        title : 'Maison a vendre',
         path : '/listing/grid-view/2-grid/left-sidebar',
     },
     {
-        title : 'Open House',
-        path : '/listing/grid-view/3-grid/left-sidebar',
-    },
-    {
-        title : 'New Listing',
+        title : 'Annonce récente',
         path : '/listing/list-view/listing/left-sidebar',
     },
     {
-        title : 'Recently Reduce',
+        title : ' ReduRecentlyce',
         path : '/listing/list-view/thumbnail-image',
     },
-    {
+  /*  {
         title : 'Off-Market Home',
         path : '/listing/grid-view/slider',
     },
@@ -156,6 +152,10 @@ export const buyFooterData = [
         title : 'Latest House',
         path : '/listing/list-view/video',
     },
+        {
+        title : 'Open House',
+        path : '/listing/grid-view/3-grid/left-sidebar',
+    },*/
 ]
 
 export const sellFooterData = [
@@ -231,19 +231,19 @@ export const blogDataHorizontal = [
   {
       img : 'assets/images/footer/1.jpg',
       path : '/page/blog-detail/left-sidebar',
-      title : 'Real Estate Industry',
-      desc : 'An Electronic version of the real estate industry.',
+      title : 'industrie immobilier',
+      desc : 'Une version électronique de l industrie immobilière',
     },
     {
       img : 'assets/images/footer/2.jpg',
       path : '/page/blog-detail/left-sidebar',
-      title : 'Entertaining Spaces',
-      desc : 'This home provides wonderful entertaining spaces.',
+      title : 'Espaces de divertissement ',
+      desc : 'Cette maison offre de magnifiques espaces de réception',
     },
     {
       img : 'assets/images/footer/3.jpg',
       path : '/page/blog-detail/left-sidebar',
-      title : 'Estate Agents Work',
-      desc : 'The market of buying and selling real estate.',
+      title : 'Gestion immobilière',
+      desc : 'Biens immobiliers',
     }
 ]

@@ -1,7 +1,7 @@
 {
   "data" : [
     {
-      "title": "about",
+      "title": "A propos",
       "value": "about",
       "slugTitle": "about",
       "details": [
@@ -17,14 +17,14 @@
       ]
     },
     {
-      "title": "feature",
+      "title": "caractéristique",
       "value": "feature",
       "slugTitle": "feature",
       "details": [
         {
           "features": [
             {
-              "title": "Free Wi-Fi",
+              "title": " Wi-Fi Gratuit",
               "icon": "wifi"
             },
             {
@@ -80,7 +80,7 @@
       ]
     },
     {
-      "title": "gallery",
+      "title": "Galerie",
       "value": "gallery",
       "slugTitle": "gallery",
       "details": [
@@ -185,7 +185,7 @@
       ]
     },
     {
-      "title": "Floor Plan",
+      "title": "Plans",
       "value": "floor_plan",
       "slugTitle": "floor-plan",
       "details": {
@@ -194,7 +194,7 @@
       }
     },
     {
-      "title": "location",
+      "title": "Localisation",
       "value": "location",
       "slugTitle": "location",
       "details": {

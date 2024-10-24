@@ -1,0 +1,84 @@
+[
+    {
+      "id": 1,
+      "type": "Appartement",
+      "img": [
+        { "src": "https://example.com/img1.jpg", "alt": "Salon" },
+        { "src": "https://example.com/img2.jpg", "alt": "Chambre" }
+      ],
+      "thumbnail": "https://example.com/thumb1.jpg",
+      "propertyStatus": "À Vendre",
+      "country": "Maroc",
+      "city": "Casablanca",
+      "title": "Appartement Moderne à Casablanca",
+      "price": 950000,
+      "details": "Un appartement de luxe situé au cœur de Casablanca, proche de toutes commodités.",
+      "home": "2CH",
+      "bed": "2",
+      "bath": "2",
+      "sqft": 1200,
+      "rooms": 4,
+      "date": "2024-10-01",
+      "propertyType": "Condo",
+      "agencies": "Immobilier Prestige",
+      "labels": ["Luxe", "Moderne"],
+      "sale": true,
+      "surface": 1100,
+      "quartier": "Maarif"
+    },
+    {
+      "id": 2,
+      "type": "Maison",
+      "img": [
+        { "src": "https://example.com/img3.jpg", "alt": "Vue de face" },
+        { "src": "https://example.com/img4.jpg", "alt": "Jardin" }
+      ],
+      "thumbnail": "https://example.com/thumb2.jpg",
+      "propertyStatus": "À Louer",
+      "country": "Maroc",
+      "city": "Fès",
+      "title": "Maison de Campagne à Fès",
+      "price": 1500,
+      "details": "Une charmante maison de campagne idéale pour les familles, située dans un quartier paisible de Fès.",
+      "home": "3CH",
+      "bed": "3",
+      "bath": "2",
+      "sqft": 1800,
+      "rooms": 5,
+      "date": "2024-09-15",
+      "propertyType": "Cottage",
+      "agencies": "Fès Immobilier",
+      "labels": ["Nature", "Famille"],
+      "fees": true,
+      "surface": 1750,
+      "quartier": "Prestigia"
+    },
+    {
+      "id": 3,
+      "type": "Villa",
+      "img": [
+        { "src": "https://example.com/img5.jpg", "alt": "Extérieur de la Villa" },
+        { "src": "https://example.com/img6.jpg", "alt": "Piscine privée" }
+      ],
+      "thumbnail": "https://example.com/thumb3.jpg",
+      "propertyStatus": "À Vendre",
+      "country": "Maroc",
+      "city": "Marrakech",
+      "title": "Villa Luxueuse à Marrakech",
+      "price": 4500000,
+      "details": "Une villa somptueuse avec piscine privée et vue sur les montagnes de l'Atlas, située dans un quartier prestigieux de Marrakech.",
+      "home": "5CH",
+      "bed": "5",
+      "bath": "4",
+      "sqft": 3500,
+      "rooms": 8,
+      "date": "2024-10-10",
+      "propertyType": "Villa",
+      "agencies": "Marrakech Prestige",
+      "labels": ["Luxe", "Piscine Privée", "Vue sur les Montagnes"],
+      "sale": true,
+      "surface": 4000,
+      "quartier": "Hivernage"
+    }
+  ]
+  

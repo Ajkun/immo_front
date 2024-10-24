@@ -334,7 +334,7 @@ export const modulesTitleData: modulesTitle[] = [
     titleClass: 'title-2',
     descClass: 'mb-0',
     desc: 'Discover New York’s best things to do, restaurants, theatre, nightlife and more',
-    heading: 'Latest Property Listing',
+    heading: 'Les derniers bien ajouter',
     type: 'basic',
     tag: '',
     tagClass: '',

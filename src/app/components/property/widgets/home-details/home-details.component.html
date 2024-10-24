@@ -3,33 +3,33 @@
     <div class="single-title">
       <div class="left-single">
         <div class="d-flex">
-          <h2 class="mb-0">{{ propertyDetails ? propertyDetails.title : 'Orchard House' }} </h2>
-          <span><span class="label label-shadow ms-2">For Sale</span></span>
+          <h2 class="mb-0">{{ property ? property.title : 'Orchard House' }} </h2>
+          <span><span class="label label-shadow ms-2">En vente</span></span>
         </div>
-        <p class="mt-2">{{ propertyDetails ? propertyDetails.country : 'Mina Road, Bur Dubai, Dubai, United Arab Emirates' }}</p>
+        <p class="mt-2">{{ property ? property.country : 'Mina Road, Bur Dubai, Dubai, United Arab Emirates' }}</p>
         <ul>
           <li>
             <div>
               <img src="assets/images/svg/icon/double-bed.svg" class="img-fluid" alt="bed-icon">
-              <span>{{ propertyDetails ? propertyDetails.bed : '4' }} Bedrooms</span>
+              <span>{{ property ? property.bed : '3' }} Chambres</span>
             </div>
           </li>
           <li>
             <div>
               <img src="assets/images/svg/icon/bathroom.svg" class="img-fluid" alt="bathroom-icon">
-              <span>{{ propertyDetails ? propertyDetails.bath : '4' }} Bathrooms</span>
+              <span>{{ property ? property.bath : '4' }} Salles de bain</span>
             </div>
           </li>
           <li>
             <div>
               <img src="assets/images/svg/icon/sofa.svg" class="img-fluid" alt="sofa-icon">
-              <span>{{ propertyDetails ? propertyDetails.rooms : '2' }} Rooms</span>
+              <span>{{ property ? property.rooms : '2' }} Pièces</span>
             </div>
           </li>
           <li>
             <div>
               <img src="assets/images/svg/icon/square-ruler-tool.svg" class="img-fluid ruler-tool" alt="ruler-icon">
-              <span>{{ propertyDetails ? propertyDetails.sqft : '5000' }} Sq ft</span>
+              <span>{{ property ? property.sqft : '120' }}m² Surface </span>
             </div>
           </li>
           <li>
@@ -42,7 +42,7 @@
         <div class="share-buttons">
           <div class="d-inline-block">
             <a href="javascript:void(0)" class="btn btn-gradient btn-pill color-2"><i class="far fa-share-square"></i>
-              share
+              Partager
             </a>
             <div class="share-hover">
               <ul>
@@ -64,9 +64,9 @@
               </ul>
             </div>
           </div>
-          <a href="javascript:void(0)" class="btn btn-dashed btn-pill color-2 ms-md-2 ms-1 save-btn"><i class="far fa-heart"></i> Save</a>
+          <a href="javascript:void(0)" class="btn btn-dashed btn-pill color-2 ms-md-2 ms-1 save-btn"><i class="far fa-heart"></i> Favooris</a>
           <a href="javascript:void(0)" class="btn btn-dashed btn-pill color-2 ms-md-2 ms-1" (click)="print()">
-            <app-feather-icons [icon]="'printer'"></app-feather-icons> Print</a>
+            <app-feather-icons [icon]="'printer'"></app-feather-icons> Imprimer</a>
         </div>
       </div>
       <div class="right-single">
@@ -77,14 +77,14 @@
           <i class="fas fa-star"></i>
           <i class="far fa-star"></i>
         </div>
-        @if(propertyDetails){
-          <h2 class="price">{{  propertyDetails.price | currencySymbol: propertyService.Currency }} <span>/ start From</span></h2>
-        }@else if(!propertyDetails){
-          <h2 class="price">{{ 2045472 | currencySymbol: propertyService.Currency }} <span>/ start From</span></h2>
+        @if(property){
+          <h2 class="price">{{  property.price | currencySymbol: propertyService.Currency }} <span>/ A Partir de</span></h2>
+        }@else if(!property){
+          <h2 class="price">{{ 2045472 | currencySymbol: propertyService.Currency }} <span>/ A partir de</span></h2>
         }
         <div class="feature-label">
           <span class="btn btn-dashed color-2 btn-pill">Wi-fi</span>
-          <span class="btn btn-dashed color-2 ms-1 btn-pill">Swimming Pool</span>
+          <span class="btn btn-dashed color-2 ms-1 btn-pill">Piscine</span>
         </div>
       </div>
     </div>

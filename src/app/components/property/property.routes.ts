@@ -46,5 +46,6 @@ export default[
     path: 'modal-details',
     component: PropertyModalDetailsComponent
   },
+  { path: 'property/:id', component: PropertyImageBoxComponent },
 ] as Routes;
 

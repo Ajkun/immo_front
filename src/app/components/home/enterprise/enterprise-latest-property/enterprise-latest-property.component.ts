@@ -17,7 +17,7 @@ export class EnterpriseLatestPropertyComponent {
   @Input() tagClass: string;
   @Input() latestForRentData: latestForRent[];
 
-  public desc = 'Discover New York’s best things to do, restaurants, theatre, nightlife and more';
+  public desc = 'Decouvrir nos dernier bien ';
   public title = 'enterprise';
 
   constructor(public propertyService: PropertyService){}

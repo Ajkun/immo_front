@@ -2,19 +2,30 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { agencyData, agentsData, agentsDetails, bannerData, blogDetailsData, brandData, currency, faqData, featuredPropertyData, happyClientsData, homeSectionData, latestBlogData, latestForRent, latestForRentData, latestForSale, latestForSaleData, newOfferData, peopleSayData, pricingPlanData, privacyData, propertyCityData, propertyOfDayData, providedServicesData, sliderData, termsData } from '../interface/property';
+import { property } from '../interface/property';
+
 
 @Injectable({
   providedIn: 'root',
 })
 
 export class PropertyService {
-  private apiUrl = 'http://localhost:8000/api/properties'; 
-
+ // private apiUrl = 'http://localhost:8000/api/properties'; 
+  private apiUrl = 'assets/data/property.json'; 
   constructor(private http: HttpClient) { }
 
 
-  getProperties(): Observable<any> {
-    return this.http.get<any>(this.apiUrl);
+  getProperties(): Observable<property[]> {
+    return this.http.get<property[]>(this.apiUrl);
+  }
+
+  getPropertyById(id: number): Observable<property | undefined> {
+    return this.getProperties().pipe(
+      map((properties: property[]) => {
+        // Convert property.id to number if necessary
+        return properties.find(property => Number(property.id) === id);
+      })
+    );
   }
 
 
@@ -24,6 +35,8 @@ export class PropertyService {
   public Currency = this.currency || { name: 'Dollar', currency: 'USD',symbol: "$", price: 1 }
 
   // constructor(private http: HttpClient) {}
+
+
 
   // Méthode pour récupérer les statuts de propriété
   getPropertyStatus(): Observable<any[]> {

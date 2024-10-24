@@ -23,9 +23,9 @@ export class AboutUs1Component {
   public themeLogo = 'assets/images/logo/2.png';
   public footerLogo = 'assets/images/logo/footer-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
-  public title = 'About Us';
+  public title = 'A propos de nous';
   public parent = 'Home';
-  public child = 'About Us';
+  public child = 'A propos de nous';
 
   public aboutDesc = 'Residences can be classified into different type of housing tenure can used for same physical type.';
   public chooseUsDesc = 'Elegant retreat in Coral Gables setting. This home provides entertaining spaces with kitchen opening';

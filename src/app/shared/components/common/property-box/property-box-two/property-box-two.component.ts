@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { Store } from '@ngxs/store';
 import { Gallery, ImageSize, ThumbnailsPosition } from 'ng-gallery';
 import { Lightbox } from 'ng-gallery/lightbox';
@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-property-box-two',
   standalone: true,
-  imports:[ImageSliderComponent,FeatherIconsComponent,CurrencySymbolPipe,CommonModule],
+  imports:[ImageSliderComponent,FeatherIconsComponent,CurrencySymbolPipe,CommonModule,RouterModule],
   templateUrl: './property-box-two.component.html',
   styleUrls: ['./property-box-two.component.scss'],
 })
@@ -32,8 +32,9 @@ export class PropertyBoxTwoComponent implements OnInit {
 
   loadProperties() {
     this.propertyService.getProperties().subscribe(
-      (data) => {
+      (data) => { // response
         this.properties = data; // Stocke les propriétés récupérées
+       // console.log(data)
       },
       (error) => {
         console.error('Erreur lors de la récupération des propriétés', error);

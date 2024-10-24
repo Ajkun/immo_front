@@ -13,7 +13,7 @@ import { TitleComponent } from '../../../../shared/components/ui/title/title.com
 })
 export class EnterpriseLatestBlogComponent {
 
-  public desc = 'See why ProCity is one of the best friends for exploring the city.';
+  public desc = 'Description pour le bloc blog';
   public title = 'enterprise';
 
   public latestBlogData: latestBlog[] = [];

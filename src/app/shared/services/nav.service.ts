@@ -30,7 +30,7 @@ export class NavService {
 
   public MENUITEMS: Menu[] = [
     {
-      title: 'home',
+      title: 'Acceuil',
       icon: 'home',
       type: 'sub',
       active: false,
@@ -103,7 +103,7 @@ export class NavService {
       ],
     },
     {
-      title: 'listing',
+      title: 'Annonce',
       icon: 'clipboard',
       type: 'sub',
       level: 1,
@@ -376,7 +376,7 @@ export class NavService {
       ],
     },
     {
-      title: 'property',
+      title: 'Bien immobilier',
       icon: 'link',
       type: 'sub',
       active: false,
@@ -429,6 +429,7 @@ export class NavService {
         },
       ],
     },
+    // to comment before the demo
     {
       title: 'pages',
       icon: 'layers',
@@ -937,7 +938,7 @@ export class NavService {
       ],
     },
     {
-      title: 'agent',
+      title: 'agents',
       icon: 'user',
       active: false,
       right: true,

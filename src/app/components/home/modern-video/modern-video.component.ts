@@ -26,7 +26,7 @@ export class ModernVideoComponent {
   public darkHeaderLogo = 'assets/images/logo/9.png';
   public footerLogo = 'assets/images/logo/footer-logo.png';
   public title = 'modern_video';
-  public heading = 'Latest Property Listing';
+  public heading = 'Les derniers biens ajouter';
   public desc = 'Discover New York’s best things to do, restaurants, theatre, nightlife and more';
 
   public theme_default3 = '#ff5c41';

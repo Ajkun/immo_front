@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FeatherIconsComponent } from '../../../../shared/components/ui/feather-icons/feather-icons.component';
-import { latestForRent } from '../../../../shared/interface/property';
+import { latestForRent, property } from '../../../../shared/interface/property';
 import { CurrencySymbolPipe } from '../../../../shared/pipe/currency-symbol.pipe';
 import { PropertyService } from '../../../../shared/services/property.service';
 
@@ -13,11 +13,17 @@ import { PropertyService } from '../../../../shared/services/property.service';
 })
 export class HomeDetailsComponent {
 
-  @Input() propertyDetails: latestForRent
+  @Input() propertyDetails: latestForRent;
+  @Input() property: property | undefined;
+
 
   constructor(public propertyService: PropertyService) { }
 
   print() {
     window.print()
+  }
+
+  onOnit() {
+    console.log(this.property)
   }
 }

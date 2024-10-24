@@ -4,10 +4,10 @@
       <div class="back-btn d-lg-none d-block" (click)="closeFilter()">
         Back
       </div>
-      <h5 class="mb-0 advance-title">Advance search </h5>
+      <h5 class="mb-0 advance-title">Recherche</h5>
     </div>
     <div class="advance-card">
-      <h6>filter</h6>
+      <h6>filtrer</h6>
       <app-filter-box [buttonClass]="'color-2 btn-block btn-pill'" [label]="false"
                       (propertyStatusData)="getStatus($event)"
                       (propertyTypeData)="getType($event)"
@@ -20,7 +20,7 @@
       </app-filter-box>
     </div>
     <div class="advance-card">
-      <h6>Category</h6>
+      <h6>Categorie</h6>
       <app-category (categoryValue)="receiveChildData($event)"></app-category>
     </div>
     <app-contact-info></app-contact-info>

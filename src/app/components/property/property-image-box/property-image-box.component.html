@@ -9,7 +9,7 @@
 </section>
 
 <section class="without-top property-main small-section">
-  <app-home-details></app-home-details>
+  <app-home-details [property]="property" ></app-home-details>
 </section>
 
 <section class="single-property mt-0 pt-0">
@@ -23,11 +23,11 @@
         </div>
         <app-related-property [type]="'grid-2'" [totalData]="4"></app-related-property>
       </div>
-      @if(propertyData){
+  <!--@if(propertyData){
         <div class="col-xl-3 col-lg-4">
           <app-advance-filter [propertyFilterSliderData]="propertyData.propertyFilterSlider"></app-advance-filter>
         </div>
-      }
+      }-->    
     </div>
   </div>
 </section>

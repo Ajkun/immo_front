@@ -1,4 +1,5 @@
 <div *ngIf="properties && properties.length > 0">
+
   <div *ngFor="let property of properties" class="property-box">
     <div class="property-image">
       <!-- Utilisation du composant d'affichage d'images -->
@@ -47,31 +48,33 @@
 
     <!-- Détails de la propriété -->
     <div class="property-details">
-      <span class="font-roboto">{{ property.address?.city }}</span>
+      <span class="font-roboto">{{ property.city }}</span>
       <a href="javascript:void(0)" >
         <h3>{{ property.type }}</h3>
       </a>
       <h6 >{{ property.price | currency:'EUR' }}</h6>
-      <p class="font-roboto">{{ property.description }}</p>
+      <p class="font-roboto">{{ property.details }}</p>
 
       <!-- Liste des caractéristiques : chambres, salles de bain, surface -->
       <ul>
         <li>
-          <img src="assets/images/svg/icon/double-bed.svg" class="img-fluid" alt="bed-icon" />Bed : {{ property.beds }}
+          <img src="assets/images/svg/icon/double-bed.svg" class="img-fluid" alt="bed-icon" />Chambres {{ property.bed }}
         </li>
         <li>
-          <img src="assets/images/svg/icon/bathroom.svg" class="img-fluid" alt="bathroom-icon" />Baths : {{ property.baths }}
+          <img src="assets/images/svg/icon/bathroom.svg" class="img-fluid" alt="bathroom-icon" />Salon de bain : {{ property.bath }}
         </li>
         <li>
-          <img src="assets/images/svg/icon/square-ruler-tool.svg" class="img-fluid ruler-tool" alt="ruler-icon" />Sq Ft : {{ property.area }}
+          <img src="assets/images/svg/icon/square-ruler-tool.svg" class="img-fluid ruler-tool" alt="ruler-icon" />m² : {{ property.sqft }}
         </li>
       </ul>
 
       <!-- Bouton Détails -->
       <div class="property-btn d-flex">
-        <span>{{ property.created_at | date }}</span>
-        <button type="button" class="btn btn-dashed btn-pill"  >
-          Details
+        <span>{{ property.date | date }}</span>
+        <button type="button" class="btn btn-dashed btn-pill" 
+        [routerLink]="['/property/property/'+ property.id]"
+         >
+          Détails {{ property.id }}
         </button>
       </div>
     </div>

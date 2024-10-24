@@ -1,3 +1,35 @@
+export interface property {
+  id: number;
+  type: string;
+  img: img[];
+  thumbnail: string;
+  propertyStatus: string;
+  country: string;
+  city : string;
+  title: string;
+  price: number;
+  details: string;
+  home?: string;
+  bed: string;
+  bath: string;
+  sqft: number;
+  rooms: number;
+  date: string;
+  propertyType: string | number;
+  agencies: string;
+  labels: string[];
+  sale?: boolean;
+  fees?: boolean;
+  openHouse?: boolean;
+  sold?: boolean;
+  params?:any;
+  propertyTab?: number;
+  surface: number;
+  quartier : string;
+}
+
+
+
 export interface images {
   img: string;
   icon?: string;
@@ -111,7 +143,8 @@ export interface latestForRent {
   openHouse?: boolean;
   sold?: boolean;
   params?:any;
-  propertyTab?: number
+  propertyTab?: number;
+  surface: number;
 }
 
 export interface newOfferData{
@@ -544,6 +577,7 @@ export interface detailsProperty{
   description?: string;
   rating?: number;
   right?: boolean;
+  id?: number;
 }
 
 export interface features{

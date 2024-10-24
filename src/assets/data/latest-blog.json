@@ -1,73 +1,72 @@
 {
   "latestBlog": [
     {
-        "id" : 1,
-        "type" : "corporate",
-        "img" : "assets/images/blog/blog-1.jpg",
-        "date" : "18",
-        "month" : "July",
-        "city" : "Phonics ,Newyork",
-        "title" : "Signs That You Should Sell Your Home Soon",
-        "desc" : "Luxury real estate is sometimes use as store value, especially wealthy foreigners, without any particular attempt to rent. Some luxury units in London and New York City.",
-        "right": false
+      "id": 1,
+      "type": "corporate",
+      "img": "assets/images/blog/blog-1.jpg",
+      "date": "18",
+      "month": "Juillet",
+      "city": "Phonics, New York",
+      "title": "Signes que vous devriez vendre votre maison bientôt",
+      "desc": "L'immobilier de luxe est parfois utilisé comme réserve de valeur, surtout par des étrangers fortunés, sans aucun effort particulier pour louer. Certains logements de luxe à Londres et à New York.",
+      "right": false
     },
     {
-        "id" : 2,
-        "type" : "corporate",
-        "img" : "assets/images/blog/2.jpg",
-        "date" : "19",
-        "month" : "June",
-        "city" : "Cambridge,England",
-        "title" : "Twice profit than before you ever got in business.",
-        "desc" : "Residences can be classified by and how they are connected to neighbouring residences and land. Different types of housing tenure can be used for the same physical type.",
-        "right": true
+      "id": 2,
+      "type": "corporate",
+      "img": "assets/images/blog/2.jpg",
+      "date": "19",
+      "month": "Juin",
+      "city": "Cambridge, Angleterre",
+      "title": "Deux fois plus de profit qu'avant de commencer dans le business.",
+      "desc": "Les résidences peuvent être classées en fonction de la manière dont elles sont connectées aux résidences voisines et aux terrains. Différents types de tenure peuvent être appliqués pour le même type physique.",
+      "right": true
     },
     {
-        "id" : 3,
-        "type" : "corporate",
-        "img" : "assets/images/blog/3.jpg",
-        "date" : "18",
-        "month" : "May",
-        "city" : "Barcelona,London",
-        "title" : "What Are Credit Scores And Why Are They Important?",
-        "desc" : "The most common and most absolute type of real estate property, the tenant enjoys the greatest discretion over the disposal of the estate property.",
-        "right": false
+      "id": 3,
+      "type": "corporate",
+      "img": "assets/images/blog/3.jpg",
+      "date": "18",
+      "month": "Mai",
+      "city": "Barcelone, Londres",
+      "title": "Qu'est-ce que les scores de crédit et pourquoi sont-ils importants ?",
+      "desc": "Le type de bien immobilier le plus courant et le plus absolu, où le locataire bénéficie de la plus grande discrétion dans la gestion de la propriété immobilière.",
+      "right": false
     },
     {
-        "id" : 4,
-        "type" : "corporate",
-        "img" : "assets/images/blog/2.jpg",
-        "date" : "26",
-        "month" : "Feb",
-        "city" : "Berlin,Germany",
-        "title" : "Things To Look Out For When Viewing A Property.",
-        "desc" : "An interior designer is someone who plans, researches, construction sites, coordinates,management and manages such enhancement projects.",
-        "right": true
+      "id": 4,
+      "type": "corporate",
+      "img": "assets/images/blog/2.jpg",
+      "date": "26",
+      "month": "Février",
+      "city": "Berlin, Allemagne",
+      "title": "Choses à surveiller lors de la visite d'un bien immobilier.",
+      "desc": "Un designer d'intérieur est une personne qui planifie, recherche, coordonne les chantiers et gère de tels projets d'amélioration.",
+      "right": true
     },
     {
       "id": 5,
       "type": "enterprise",
       "img": "assets/images/blog/4.jpg",
-      "date": "January 10, 2023",
-      "title": "Someone who is obsessed with fashion niche very well.",
-      "desc": "how they are connected to residences and land. Residences can be classified in flat or apartment."
+      "date": "10 janvier 2023",
+      "title": "Quelqu'un qui est obsédé par la mode et le connaît très bien.",
+      "desc": "Comment elles sont connectées aux résidences et aux terrains. Les résidences peuvent être classées en appartement ou en immeuble."
     },
     {
       "id": 6,
       "type": "enterprise",
       "img": "assets/images/blog/5.jpg",
-      "date": "December 9, 2023",
-      "title": "Residences can be classified by and they are connected.",
-      "desc": "Residences can be classified by and how they are connected to neighbouring residences and land."
+      "date": "9 décembre 2023",
+      "title": "Les résidences peuvent être classées et connectées.",
+      "desc": "Les résidences peuvent être classées en fonction de la manière dont elles sont connectées aux résidences voisines et aux terrains."
     },
     {
       "id": 7,
       "type": "enterprise",
       "img": "assets/images/blog/4.jpg",
-      "date": "January 9, 2023",
-      "title": "See why ProCity is one of best friends for exploring city.",
-      "desc": "How they are connected to residences and land. Residences can be classified in flat or apartment."
+      "date": "9 janvier 2023",
+      "title": "Découvrez pourquoi ProCity est l'un des meilleurs amis pour explorer la ville.",
+      "desc": "Comment elles sont connectées aux résidences et aux terrains. Les résidences peuvent être classées en appartement ou en immeuble."
     }
-]
-
+  ]
 }

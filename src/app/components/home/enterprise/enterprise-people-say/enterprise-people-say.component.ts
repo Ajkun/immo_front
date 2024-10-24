@@ -13,7 +13,7 @@ import { PeopleSayComponent } from '../../../../shared/components/common/people-
 })
 export class EnterprisePeopleSayComponent {
 
-  public desc = 'Cum doctus civibus efficiantur in imperdiet deterruisset.';
+  public desc = 'Description';
   public title: string = 'enterprise';
 
   public peopleSayData: peopleSay[];

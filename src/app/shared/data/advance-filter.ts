@@ -1,12 +1,12 @@
 export const propertyStatus = [
   {
     id: 1,
-    title: 'For Rent',
+    title: 'A Louer',
     value: 'for_rent',
   },
   {
     id: 2,
-    title: 'For Sale',
+    title: 'A vendre',
     value: 'for_sale',
   },
 ];
@@ -14,12 +14,12 @@ export const propertyStatus = [
 export const propertyType = [
   {
     id: 1,
-    title: 'Apartment',
+    title: 'Appartement',
     value: 'apartment',
   },
   {
     id: 2,
-    title: 'Family House',
+    title: 'Maison Familiale',
     value: 'family_house',
   },
   {

@@ -21,9 +21,9 @@
         <!-- Fro Property Listing -->
         @if(!tab){
         <div>
-          <h2>Properties Listing</h2>
+          <h2>Liste des biens immobiliers</h2>
           @if(paginationData){
-          <span class="show-result">Showing <span>{{ paginationData.totalItems > 0 ? paginationData.startIndex + 1 : 0}}- {{ paginationData.totalItems > 0 ? paginationData.endIndex + 1 : 0}} of {{ paginationData.totalItems > 0 ? paginationData.totalItems : 0 }}</span> Listings</span>
+          <span class="show-result">Affichage de <span>{{ paginationData.totalItems > 0 ? paginationData.startIndex + 1 : 0}}- {{ paginationData.totalItems > 0 ? paginationData.endIndex + 1 : 0}} sur {{ paginationData.totalItems > 0 ? paginationData.totalItems : 0 }}</span> </span>
           }
         </div>
         }
@@ -44,7 +44,7 @@
       @if(filter == true){
         <li>
           <div class="filter-bottom-title" (click)="openFilter()">
-            <h6 class="mb-0 font-roboto">Advance search <app-feather-icons [icon]="'align-center'" class="float-end ms-2"></app-feather-icons></h6>
+            <h6 class="mb-0 font-roboto">Recherche avancer <app-feather-icons [icon]="'align-center'" class="float-end ms-2"></app-feather-icons></h6>
           </div>
         </li>
       }
