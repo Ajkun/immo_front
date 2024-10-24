@@ -8,7 +8,7 @@ import { TranslateModule } from '@ngx-translate/core';
 @Component({
   selector: 'app-menu',
   standalone: true,
-  imports: [FeatherIconsComponent,CommonModule,RouterModule,TranslateModule],
+  imports: [FeatherIconsComponent,CommonModule,RouterModule,TranslateModule,RouterModule],
   providers:[NavService],
   templateUrl: './menu.component.html',
   styleUrls: ['./menu.component.scss'],

@@ -13,9 +13,9 @@
                 </li>
                   @for(menuItem of menuItems; track menuItem){
                     @if(!menuItem.megaMenu){
-                      <li class="dropdown" [ngClass]="{ 'dropdown-right' : menuItem.right && menuRight }">
+                      <li  class="dropdown test" [ngClass]="{ 'dropdown-right' : menuItem.right && menuRight }">
                         @if(menuItem.title){
-                          <a href="javascript:void(0)" class="nav-link menu-title" [ngClass]="menuItem.active && isOpenMenu ? 'active' : ''" (click)="openMenu(menuItem)">
+                          <a [routerLink]="menuItem.path" class="nav-link menu-title" [ngClass]="menuItem.active && isOpenMenu ? 'active' : ''" (click)="openMenu(menuItem)">
                             @if(icon){
                               <app-feather-icons [icon]="menuItem.icon"></app-feather-icons>
                             }

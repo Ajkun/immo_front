@@ -35,6 +35,7 @@ export class NavService {
       type: 'sub',
       active: false,
       level: 1,
+      path: '/theme/modern'
     /*  children: [
         {
           title: 'slider filter search',
@@ -976,6 +977,7 @@ export class NavService {
       right: true,
       type: 'sub',
       level: 1,
+      path: '/contact/contact-3',
       children: [
       /*  {
           title: 'Contact us 1',
