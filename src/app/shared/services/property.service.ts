@@ -10,22 +10,18 @@ import { property } from '../interface/property';
 })
 
 export class PropertyService {
- // private apiUrl = 'http://localhost:8000/api/properties'; 
-  private apiUrl = 'assets/data/property.json'; 
+ private apiUrl = ' http://127.0.0.1:8000/api/properties';
+  // private apiUrl = 'assets/data/property.json';
   constructor(private http: HttpClient) { }
 
 
-  getProperties(): Observable<property[]> {
-    return this.http.get<property[]>(this.apiUrl);
+  getProperties(): Observable<any[]> {
+    return this.http.get<any[]>(this.apiUrl);
   }
 
-  getPropertyById(id: number): Observable<property | undefined> {
-    return this.getProperties().pipe(
-      map((properties: property[]) => {
-        // Convert property.id to number if necessary
-        return properties.find(property => Number(property.id) === id);
-      })
-    );
+  getPropertyById(id: string): Observable<property | undefined> {
+      return this.http.get<property>(`http://127.0.0.1:8000/api/properties/${id}`);
+
   }
 
 

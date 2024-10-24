@@ -79,12 +79,12 @@ export class PropertyImageBoxComponent {
     this.route.paramMap.subscribe(params => {
       const id = params.get('id');
       if (id) {
-        this.loadProperty(parseFloat (id));
+        this.loadProperty(id);
       }
     });   
   }
 
-  loadProperty(id: number) {
+  loadProperty(id: string) {
     this.propertyService.getPropertyById(id).subscribe(
       (data) => {
         this.property = data;
