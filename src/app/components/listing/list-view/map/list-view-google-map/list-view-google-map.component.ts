@@ -18,7 +18,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 export class ListViewGoogleMapComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
   public title = 'Google Map';
   public parent = 'Listing';
@@ -30,8 +30,8 @@ export class ListViewGoogleMapComponent {
   public totalProperty: number;
   public filterValue: string;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   public mapOptions: google.maps.MapOptions = {
     center: { lat: 25.276987, lng: 55.296249 },

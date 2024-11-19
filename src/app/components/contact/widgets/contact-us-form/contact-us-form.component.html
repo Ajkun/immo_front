@@ -1,5 +1,5 @@
 <div class="mb-4 text-start">
-  <h2>Let's Get In Touch</h2>
+  <h2>Contactez nous </h2>
 </div>
 <form class="row gx-3" [ngClass]="rowClass">
   <div class="form-group col-md-12">
@@ -9,7 +9,7 @@
           <app-feather-icons [icon]="'user'"></app-feather-icons>
         </div>
       </div>
-      <input type="text" class="form-control" placeholder="Enter your name" required="">
+      <input type="text" class="form-control" placeholder="Nom Complet" required="">
     </div>
   </div>
   <div class="form-group col-md-6">
@@ -19,7 +19,7 @@
           <app-feather-icons [icon]="'phone'"></app-feather-icons>
         </div>
       </div>
-      <input placeholder="phone number" class="form-control" name="mobnumber" id="tbNumbers" required="">
+      <input placeholder="num de telephone" class="form-control" name="mobnumber" id="tbNumbers" required="">
     </div>
   </div>
   <div class="form-group col-md-6">
@@ -33,7 +33,7 @@
     </div>
   </div>
   <div class="form-group col-md-12">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6">Write here something</textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
   </div>
 
   @if(captcha){
@@ -46,7 +46,7 @@
           </label>
         </div>
         <div class="text">
-          I'm not a robot
+          Je suis pas un robot
         </div>
         <div class="logo">
           <img src="assets/images/inner-pages/recaptcha.png" alt="capture-image" />
@@ -56,13 +56,13 @@
       </div>
       <div>
       </div>
-      <button class="btn btn-gradient color-2 btn-flat" type="submit">Send Your Message</button>
+      <button class="btn btn-gradient color-2 btn-flat" type="submit">Envoyez</button>
     </div>
   }
 
   @if(!captcha){
     <div class="col-md-12 submit-btn">
-      <button class="btn btn-gradient color-2 btn-pill" type="submit">Send Your Message</button>
+      <button class="btn btn-gradient color-2 btn-pill" type="submit">Envoyez</button>
     </div>
   }
 </form>

@@ -24,14 +24,14 @@ import { EnterprisePropertyServiceComponent } from './enterprise-property-servic
 
 export class EnterpriseComponent {
 
-  public themeLogo = 'assets/images/logo/footer-logo.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public themeLogo = 'assets/images/logo/arai-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public headerLogo = 'assets/images/logo/2.png';
   public headerClass = 'header-2';
   public title = 'enterprise';
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   public latestForRentData: latestForRent[];
 

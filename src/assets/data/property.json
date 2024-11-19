@@ -51,14 +51,14 @@
       "labels": ["Nature", "Famille"],
       "fees": true,
       "surface": 1750,
-      "quartier": "Prestigia"
+      "quartier": "Prestigia",
+      "agencyIcon" :"assets/images/agency/logo_cabinet.png"
     },
     {
       "id": 3,
       "type": "Villa",
       "img": [
-        { "src": "https://example.com/img5.jpg", "alt": "Extérieur de la Villa" },
-        { "src": "https://example.com/img6.jpg", "alt": "Piscine privée" }
+        "name image  "," name image 2"
       ],
       "thumbnail": "https://example.com/thumb3.jpg",
       "propertyStatus": "À Vendre",

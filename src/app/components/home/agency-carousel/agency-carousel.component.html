@@ -1,0 +1,8 @@
+<div class="agency-carousel">
+  <div class="agency-container">
+    <div class="agency" *ngFor="let agency of duplicatedAgencies">
+      <img [src]="agency.agencyLogo" alt="{{ agency.title }}" class="agency-logo" />
+      <p class="agency-title">{{ agency.title }}</p>
+    </div>
+  </div>
+</div>

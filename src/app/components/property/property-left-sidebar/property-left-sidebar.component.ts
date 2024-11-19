@@ -18,7 +18,7 @@ import { HomeDetailsComponent } from "../widgets/home-details/home-details.compo
 export class PropertyLeftSidebarComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
 
   public title = 'sticky_tab';
   public activeClass = 'about';
@@ -31,8 +31,8 @@ export class PropertyLeftSidebarComponent {
 
   public tabData = tabData;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private propertyService: PropertyService) {}
 

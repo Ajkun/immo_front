@@ -27,33 +27,7 @@
                             }
                             {{ menuItem.title | translate }}</a>
                         }
-                          <ul class="nav-submenu menu-content" [ngClass]="{ 'd-block' : menuItem.active == true && isOpenMenu , 'd-none d-md-block' : menuItem.active == false && !isOpenMenu}">
-                            <div *ngTemplateOutlet="recursiveMenu; context: { $implicit: menuItem.children }"></div>
-                            <ng-template #recursiveMenu let-menuItem>
-                              @for(item of menuItem; track item){
-                                <li>
-                                  <a [routerLink]="item.path" [class.menu-title-level1]="item.children && item.level == 2" [ngClass]="{ 'submenu-title' : item.children && item.level == 3, 'active' : item.active && isOpenMenu}"  (click)="openMenu(item)">
-                                    @if(!item.active && isOpenMenu && item.children){
-                                      <app-feather-icons [icon]="'plus'" [class]="'according-menu'"></app-feather-icons>
-                                    }@if(item.active && isOpenMenu && item.children) {
-                                      <app-feather-icons [icon]="'minus'" [class]="'according-menu'"></app-feather-icons>
-                                    }
-                                    {{ item.title | translate }}
-
-                                    @if(item.badge){
-                                      <span class="label">{{ item.badgeText }}</span>
-                                    }
-                                    @if(item.badgeIcon){
-                                      <span class="icon-trend label"><i class="fas fa-bolt"></i></span>
-                                    }
-                                  </a>
-                                  <ul [class.nav-sub-childmenu]="item.children" [ngClass]="{ 'submenu-content level2' : item.level == 3, 'level1': item.level == 2, 'd-block' : item.active == true && isOpenMenu}">
-                                    <div *ngTemplateOutlet="recursiveMenu; context: { $implicit: item.children }"></div>
-                                  </ul>
-                                </li>
-                              }
-                            </ng-template>
-                          </ul>
+                       
                       </li>
                     }@else {
                       <li class="mega-menu">

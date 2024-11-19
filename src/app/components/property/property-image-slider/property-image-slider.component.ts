@@ -25,7 +25,7 @@ export class PropertyImageSliderComponent {
 
   public themeLogo = 'assets/images/logo/4.png';
   public darkHeaderLogo = 'assets/images/logo/9.png'
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
 
   public propertyDetailsData: propertyDetailsData;
   public propertyData: propertyDetailsData;
@@ -34,8 +34,8 @@ export class PropertyImageSliderComponent {
 
   public dataArray = ['about','feature','gallery','video','floor_plan','location'];
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   @Select(propertyState.property) property$: Observable<latestForRent[]>;
 

@@ -18,8 +18,8 @@ import { HomeDetailsComponent } from "../widgets/home-details/home-details.compo
 export class PropertyTemplateBreadcrumbComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
-  public bgImage = 'assets/images/inner-background.jpg';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
+  public bgImage = 'assets/images/contact-us-backgroud.webp';
   public title = 'Property Page';
   public parent = 'Home';
   public child = 'Property Page';
@@ -29,8 +29,8 @@ export class PropertyTemplateBreadcrumbComponent {
   
   public dataArray = ['about','feature','gallery','video','floor_plan','location'];
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private propertyService: PropertyService) {}
 

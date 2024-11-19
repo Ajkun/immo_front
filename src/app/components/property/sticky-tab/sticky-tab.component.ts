@@ -17,7 +17,7 @@ import { RelatedPropertyComponent } from "../widgets/related-property/related-pr
 export class StickyTabComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public title = 'sticky_tab';
 
   public total = 3;
@@ -25,8 +25,8 @@ export class StickyTabComponent {
   public latestForRentData: latestForRent[] = [];
   public propertyData: propertyDetailsData;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private propertyService: PropertyService) {}
 

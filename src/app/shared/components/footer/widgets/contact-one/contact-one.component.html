@@ -8,9 +8,9 @@
   <div class="footer-content" [ngClass]="{ 'd-block' : isContactOpen , 'd-none d-md-block' : !isContactOpen}">
     <a href="javascript:void(0)" [routerLink]="['']">
       @if(layout.config.settings.layout_version == 'dark-layout'){
-        <img [src]="darkFooterLogo" alt="Sheltos" class="img-fluid" />
+        <img [src]="darkFooterLogo" alt="Sheltos" class="img-fluid img-footer" />
       }@else {
-        <img [src]="footerLogo" alt="Sheltos" class="img-fluid" />
+        <img [src]="footerLogo" alt="Sheltos" class="img-fluid img-footer" />
       }
     </a>
     <p>

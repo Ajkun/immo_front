@@ -1,0 +1,31 @@
+.agency-carousel {
+  display: flex;
+  overflow: hidden;
+  height: 150px; /* Adjust the height as needed */
+  width: 100%; /* Full width of the container */
+  position: relative;
+}
+
+.agency-container {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.agency {
+  min-width: 200px; /* Adjust the width as needed for each agency */
+  margin: 0 10px; /* Space between agencies */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.agency-logo {
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.agency-title {
+  margin-top: 10px;
+  font-size: 16px; /* Adjust the font size as needed */
+}

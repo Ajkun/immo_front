@@ -49,6 +49,12 @@
     <!-- Détails de la propriété -->
     <div class="property-details">
       <span class="font-roboto">{{ property.city }}</span>
+
+      <!-- Agency logo -->
+      <div class="agency-logo">
+        <img *ngIf="property.agencyIcon" [src]="property.agencyIcon" alt="Agency Logo" class="img-fluid agency-logo-img" />
+      </div>
+
       <a href="javascript:void(0)" >
         <h3>{{ property.type }}</h3>
       </a>
@@ -64,7 +70,7 @@
           <img src="assets/images/svg/icon/bathroom.svg" class="img-fluid" alt="bathroom-icon" />Salon de bain : {{ property.bath }}
         </li>
         <li>
-          <img src="assets/images/svg/icon/square-ruler-tool.svg" class="img-fluid ruler-tool" alt="ruler-icon" />m² : {{ property.sqft }}
+          <img src="assets/images/svg/icon/square-ruler-tool.svg" class="img-fluid ruler-tool" alt="ruler-icon" />m² : {{ property.surface }}
         </li>
       </ul>
 

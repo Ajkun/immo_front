@@ -16,7 +16,7 @@ import { CommonModule } from '@angular/common';
 export class ModulesPropertyComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
   public title = 'Property';
   public parent = 'Modules';
@@ -37,8 +37,8 @@ export class ModulesPropertyComponent {
   public latestForRentData2: latestForRent[] = [];
   public propertyData: latestForSale[] = [];
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private propertyService: PropertyService) {}
 

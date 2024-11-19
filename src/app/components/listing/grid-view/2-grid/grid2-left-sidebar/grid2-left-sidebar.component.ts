@@ -16,8 +16,8 @@ import { PropertyService } from '../../../../../shared/services/property.service
 export class Grid2LeftSidebarComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
-  public bgImage = 'assets/images/inner-background.jpg';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
+  public bgImage = 'assets/images/agency-background-image.webp';
   public title = 'Left sidebar view';
   public parent = 'Listing';
   public child = 'Left sidebar view';
@@ -28,8 +28,8 @@ export class Grid2LeftSidebarComponent {
   public totalProperty: number;
   public filterValue: string;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private propertyBoxGridService: PropertyBoxGridService, public propertyService: PropertyService) { }
 

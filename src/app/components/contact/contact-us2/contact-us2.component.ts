@@ -15,16 +15,16 @@ import { DownloadAppComponent } from "../widgets/download-app/download-app.compo
 export class ContactUs2Component {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
-  public bgImage = 'assets/images/inner-background.jpg';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
+  public bgImage = 'http://arairabat.ma/img/img-site/about-us.jpg';
   public title = 'Contact Us';
   public parent = 'Home';
   public child = 'Contact Us';
 
   public contactDetailsData = contactDetailsData;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   public detailsArray = ['where', 'online_service'];
 

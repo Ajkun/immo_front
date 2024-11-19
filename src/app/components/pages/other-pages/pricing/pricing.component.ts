@@ -20,7 +20,7 @@ import { BrandComponent } from "../../../../shared/components/common/brand/brand
 export class PricingComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
   public title = 'Pricing';
   public parent = 'Home';
@@ -44,8 +44,8 @@ export class PricingComponent {
   public bannerDataClassic: banner[] = [];
   public brandData: brand[] = [];
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private propertyService: PropertyService) {}
 
@@ -53,7 +53,7 @@ export class PricingComponent {
     document.documentElement.style.setProperty('--theme-default', this.theme_default3);
     document.documentElement.style.setProperty('--theme-default3', this.theme_default3);
     document.documentElement.style.setProperty('--theme-default4', this.theme_default4);
-    document.documentElement.style.setProperty('--theme-default2', '#ff8c41');
+    document.documentElement.style.setProperty('--theme-default2', '#ff0000');
 
     this.propertyService.pricingPlanData().subscribe((response) => {
       this.pricingPlan = response.pricingPlan.filter((item) => item.type == this.pricingTitle);

@@ -21,7 +21,7 @@ import { CommonModule } from '@angular/common';
 export class SubmitPropertyComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
   public title = 'Add Property';
   public parent = 'Home';
@@ -30,8 +30,8 @@ export class SubmitPropertyComponent {
   public addPropertyStepsData = addPropertyStepsData;
   public activeSteps: number;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   ngOnInit() {
     document.documentElement.style.setProperty('--theme-default', this.theme_default3);

@@ -11,25 +11,27 @@ import { EnterpriseLatestBlogComponent } from "../enterprise/enterprise-latest-b
 import { EnterpriseBrandComponent } from "../enterprise/enterprise-brand/enterprise-brand.component";
 import { EnterprisePropertyServiceComponent } from "../enterprise/enterprise-property-service/enterprise-property-service.component";
 import { ModernHomeSectionComponent } from './modern-home-section/modern-home-section.component';
+import { AgencyCarouselComponent } from '../agency-carousel/agency-carousel.component';
+
 
 @Component({
     selector: 'app-modern',
     standalone: true,
     templateUrl: './modern.component.html',
     styleUrls: ['./modern.component.scss'],
-    imports: [EnterpriseLatestPropertyComponent, EnterpriseLookingForComponent, EnterprisePropertyOfDayComponent, 
+    imports: [AgencyCarouselComponent, EnterpriseLatestPropertyComponent, EnterpriseLookingForComponent, EnterprisePropertyOfDayComponent, 
       EnterpriseFeaturedCityComponent, EnterpriseBannerComponent, EnterprisePeopleSayComponent, 
       EnterpriseLatestBlogComponent, EnterpriseBrandComponent, EnterprisePropertyServiceComponent,ModernHomeSectionComponent]
 })
 export class ModernComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = "assets/images/logo/footer-logo.png"
+  public footerLogo = "assets/images/logo/arai-logo.png"
   public headerClass = 'header-2';
   public title = 'modern';
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   public latestForRentData: latestForRent[];
 

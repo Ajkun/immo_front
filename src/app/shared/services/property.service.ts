@@ -10,8 +10,9 @@ import { property } from '../interface/property';
 })
 
 export class PropertyService {
- private apiUrl = ' http://127.0.0.1:8000/api/properties';
-  // private apiUrl = 'assets/data/property.json';
+  private apiUrl = ' http://127.0.0.1:8000/api/properties';
+   //private apiUrl = 'assets/data/property.json';
+  private apiCarousel = 'assets/data/carousel.json'
   constructor(private http: HttpClient) { }
 
 
@@ -24,14 +25,15 @@ export class PropertyService {
 
   }
 
+  getAgenciesCarousel():Observable<any[]> {
+    return this.http.get<any[]>(this.apiCarousel)
+  }
+
 
   public currencyItem :any = localStorage.getItem('currency');
   public currency : currency = JSON.parse(this.currencyItem)
 
   public Currency = this.currency || { name: 'Dollar', currency: 'USD',symbol: "$", price: 1 }
-
-  // constructor(private http: HttpClient) {}
-
 
 
   // Méthode pour récupérer les statuts de propriété

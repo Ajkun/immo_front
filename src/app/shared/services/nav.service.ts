@@ -103,7 +103,7 @@ export class NavService {
         },
       ],*/
     },
-    {
+   /* {
       title: 'Annonce',
       icon: 'clipboard',
       type: 'sub',
@@ -374,13 +374,14 @@ export class NavService {
             },
           ],
         },
-      ],*/
-    },
+      ],
+    },*/
     {
-      title: 'Bien immobilier',
+      title: 'Annonces',
       icon: 'link',
       type: 'sub',
       active: false,
+      path:'listing/grid-view/2-grid/left-sidebar'
     /*  children: [
         {
           title: 'sticky tab or classic',
@@ -939,12 +940,13 @@ export class NavService {
       ],
     },*/
     {
-      title: 'agents',
+      title: 'agency',
       icon: 'user',
       active: false,
       right: true,
       level: 1,
       type: 'sub',
+      path : 'page/agency/agency-profile'
      /* children: [
         {
           title: 'Agent Profile',
@@ -977,7 +979,7 @@ export class NavService {
       right: true,
       type: 'sub',
       level: 1,
-      path: '/contact/contact-3',
+      path: '/contact/contact-2',
       children: [
       /*  {
           title: 'Contact us 1',

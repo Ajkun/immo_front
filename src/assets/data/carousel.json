@@ -1,0 +1,28 @@
+[
+    {
+      "id": 1,
+      "title": "Immo Claire service",
+      "agencyLogo": "https://www.immoservice.ma/img/Immoservice-new-logo.png"
+    },
+    {
+      "id": 2,
+      "title": "Cab Immo Tahiri",
+      "agencyLogo": "assets/images/agency/cab immo tahiri.jpg"
+    },
+    {
+      "id": 3,
+      "title": "CSN Immo",
+      "agencyLogo": "assets/images/agency/CNS LOGO.png"
+    },
+    {
+      "id": 4,
+      "title": "Cabiner immobilier Nia",
+      "agencyLogo": "assets/images/agency/logo_cabinet.png"
+    },
+    {
+      "id": 5,
+      "title": "Heritage Properties",
+      "agencyLogo": "assets/images/agency/logo_cabinet.png"
+    }
+  ]
+  

@@ -24,13 +24,13 @@ import { ModernVideoHomeSectionComponent } from './modern-video-home-section/mod
 export class ModernVideoComponent {
   public headerLogo = 'assets/images/logo/4.png';
   public darkHeaderLogo = 'assets/images/logo/9.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public title = 'modern_video';
   public heading = 'Les derniers biens ajouter';
   public desc = 'Discover New York’s best things to do, restaurants, theatre, nightlife and more';
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   public latestForRentData: latestForRent[];
 

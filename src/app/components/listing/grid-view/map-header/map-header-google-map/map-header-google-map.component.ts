@@ -12,12 +12,12 @@ import { CommonPropertyFilterListingComponent } from "../../../../../shared/comp
 })
 export class MapHeaderGoogleMapComponent {
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
 
   public listView: boolean = false;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   public mapOptions: google.maps.MapOptions = {
     center: { lat: 25.276987, lng: 55.296249 },

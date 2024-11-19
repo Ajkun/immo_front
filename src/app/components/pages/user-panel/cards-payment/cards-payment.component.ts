@@ -19,7 +19,7 @@ import { CardsDetailsComponent } from './cards-details/cards-details.component';
 export class CardsPaymentComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
   public title = 'Dashboard';
   public parent = 'Home';
@@ -27,8 +27,8 @@ export class CardsPaymentComponent {
 
   public cardsData = cardsData;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private modal: NgbModal) { }
   ngOnInit() {

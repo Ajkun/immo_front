@@ -1,33 +1,73 @@
 export interface property {
   id: number;
-  type: string;
-  img: img[];
-  thumbnail: string;
-  propertyStatus: string;
-  country: string;
-  city : string;
   title: string;
-  price: number;
-  details: string;
-  home?: string;
-  bed: string;
-  bath: string;
-  sqft: number;
-  rooms: number;
-  date: string;
-  propertyType: string | number;
-  agencies: string;
-  labels: string[];
-  sale?: boolean;
-  fees?: boolean;
-  openHouse?: boolean;
-  sold?: boolean;
-  params?:any;
-  propertyTab?: number;
+  type: string; // (villa,app........) 
+  description: string; 
+  price: number; // a gerer cote front 
   surface: number;
-  quartier : string;
+  rooms: number; // chambre
+  publishedAt : TimeRanges // loook time from symfony compatibility 
+  beds: string; // dans la partie a louer
+  thumbnail: string; 
+  propertyStatus: string; // (en vente ola to rent/vancance en demande  ???)
+  country: string; // madarach 
+  city : string; // entity  gerable in back office
+  neighborhood : string; // entity gerable in back office 
+  bath: string; // wc
+  agencyName: string; // agance (label+icon)
+  agencyIcon: string ; // 'url api + /public/smiya.png string'
+  agencyNumber: number;
+  agencyId : number;
+  percentagePromotion: number;
+  
 }
 
+export interface agencies {
+  id : number;
+  title : string;
+  agencyLogo : string;
+}
+
+export interface newAgence {
+  id : number;
+  name : string;
+  agencyImage : string ; // img
+  mobile: string;
+  email: string;
+  description: string;
+  adress : string;
+}
+
+export interface agency{
+  id: number;
+  title: string; // agencies name 
+  subTitle: string ;
+  img: string;
+  location: string;
+  mobile: string;
+  email: string;
+  link: string; 
+  property: number;
+  propertylist: property[]; 
+  aboutAgency: description[]; 
+  description: string;
+  agencyIcon : string;
+}
+
+
+export interface blog {
+  id: number;
+  images: img[];
+  date: string;
+  posted_by: string;
+  hits: number; 
+  like: number;
+  comments: number;
+  title: string;
+  description: description[]
+}
+
+//// agency
 
 
 export interface images {
@@ -406,18 +446,7 @@ export interface agencyData {
   allAgencyData: agencyAgent[];
 }
 
-export interface agency{
-  id: number;
-  title: string;
-  subTitle: string;
-  img: string;
-  location: string;
-  mobile: string;
-  email: string;
-  link: string;
-  property: number;
-  aboutAgency: description[]
-}
+
 
 export interface agencyAgent{
   id: number;

@@ -8,34 +8,39 @@
         </div>
         <p class="mt-2">{{ property ? property.country : 'Mina Road, Bur Dubai, Dubai, United Arab Emirates' }}</p>
         <ul>
-          <li>
+          <li class="description">
             <div>
               <img src="assets/images/svg/icon/double-bed.svg" class="img-fluid" alt="bed-icon">
-              <span>{{ property ? property.bed : '3' }} Chambres</span>
+              <span>{{ property ? property.beds : '3' }} Chambres</span>
             </div>
           </li>
-          <li>
+          <li class="description">
             <div>
               <img src="assets/images/svg/icon/bathroom.svg" class="img-fluid" alt="bathroom-icon">
               <span>{{ property ? property.bath : '4' }} Salles de bain</span>
             </div>
           </li>
-          <li>
+          <li class="description">
             <div>
               <img src="assets/images/svg/icon/sofa.svg" class="img-fluid" alt="sofa-icon">
               <span>{{ property ? property.rooms : '2' }} Pièces</span>
             </div>
           </li>
-          <li>
+          <li class="description">
             <div>
               <img src="assets/images/svg/icon/square-ruler-tool.svg" class="img-fluid ruler-tool" alt="ruler-icon">
-              <span>{{ property ? property.sqft : '120' }}m² Surface </span>
+              <span>{{ property ? property.surface : '120' }}m² Surface </span>
             </div>
           </li>
-          <li>
+          <li class="description">
             <div>
               <img src="assets/images/svg/icon/garage.svg" class="img-fluid" alt="garage-icon">
               <span>1 Garage</span>
+            </div>
+          </li>
+          <li class="description">
+            <div>
+              <img src="{{ property ? property.agencyIcon : 'defaultIconPath' }}" class="icon-agence" alt="{{ property ? property.title : 'icon' }}">
             </div>
           </li>
         </ul>

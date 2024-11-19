@@ -15,11 +15,11 @@ export interface listData{
 export const contactDetailsData = [
   {
     id: 1,
-    title: 'Where ?',
+    title: 'Ou',
     icon: 'map-pin',
     value: 'where',
     details:
-      '549 Sulphur Springs Road <br> Downers Grove, IL 60515 <br> +91 361264100',
+      'Avenue Annakhil Résidence Soundouss II Hay Riad Rabat, Maroc',
   },
   {
     id: 2,
@@ -32,18 +32,21 @@ export const contactDetailsData = [
   {
     id: 3,
     title: 'Online service',
-    icon: 'mail',
+    icon: 'phone',
     value: 'online_service',
     list: true,
     listDetails: [
       {
-        data: 'Inquiries: sheltos@.in',
+        data: 'Num de tel',
       },
       {
-        data: 'Support: help@.in',
+        data: ': (+212) 05 37 57 52 18',
       },
       {
-        data: '+86 163 - 451 - 7894',
+        data: 'Lundi - Vendred',
+      },
+      {
+        data: 'De 9h00 à 16h00',
       },
     ],
   },

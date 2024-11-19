@@ -13,7 +13,7 @@ import { PropertyBoxGridService } from '../../../../../shared/services/property-
 export class Grid3LeftSidebarComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
   public title = 'Left sidebar';
   public parent = 'Listing';
@@ -21,8 +21,8 @@ export class Grid3LeftSidebarComponent {
 
   public listView: boolean = false;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private propertyBoxGridService: PropertyBoxGridService) {}
 

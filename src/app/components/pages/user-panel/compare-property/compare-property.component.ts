@@ -12,14 +12,14 @@ import { ComparePropertyDataComponent } from './compare-property-data/compare-pr
 export class ComparePropertyComponent {
   
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
   public title = 'Property Compare';
   public parent = 'Home';
   public child = 'Compare Property';
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   ngOnInit() {
     document.documentElement.style.setProperty('--theme-default', this.theme_default3);

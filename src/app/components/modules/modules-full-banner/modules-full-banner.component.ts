@@ -15,7 +15,7 @@ import { BrandComponent } from "../../../shared/components/common/brand/brand.co
 export class ModulesFullBannerComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
 
   public bannerTitle1 = 'enterprise';
   public bannerTitle2 = 'image_content';
@@ -27,8 +27,8 @@ export class ModulesFullBannerComponent {
   public bannerData2: banner[] = [];
   public bannerData3: banner[] = [];
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   constructor(private propertyService: PropertyService) {}
 

@@ -7,10 +7,10 @@
           @for(data of aboutAgency; track data){
             <app-about-agency [aboutAgency]="data"></app-about-agency>
           }
-          <div class="agency-title">
+       <!--   <div class="agency-title">
             <h3>Our Agent</h3>
           </div>
-            <app-common-agency [agencyData]="agentsData" [type]="'profile'"  [totalData]="3"></app-common-agency>
+            <app-common-agency [agencyData]="agentsData" [type]="'profile'"  [totalData]="3"></app-common-agency>-->
           <div class="agent-property">
             <app-grid-panel [gridOption]="false" [gridOptions]="true" [paginationData]="paginationData" (filterValue)="sortFilter($event)"></app-grid-panel>
             <div class="property-2 row column-sm zoom-gallery property-label property-grid">
@@ -18,9 +18,9 @@
             </div>
           </div>
       </div>
-      <div class="col-xl-3 col-lg-4">
+     <!-- <div class="col-xl-3 col-lg-4">
         <app-advance-filter [contact]="false" [featured]="false" [mortgage]="false" (categoryValue)="getData($event)" (propertyStatusData)="getData($event)" (propertyTypeData)="getData($event)" (roomsData)="getData($event)" (bedsData)="getData($event)" (bathData)="getData($event)" (agencyData)="getData($event)" (priceFilter)="getData($event)" (areaFilter)="getData($event)"></app-advance-filter>
-      </div>
+      </div>-->
     </div>
   </div>
 </section>

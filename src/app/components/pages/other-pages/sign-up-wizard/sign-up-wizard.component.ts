@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
 export class SignUpWizardComponent {
 
   public themeLogo = 'assets/images/logo/2.png';
-  public footerLogo = 'assets/images/logo/footer-logo.png';
+  public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
   public title = 'Sign up wizard';
   public parent = 'Home';
@@ -31,8 +31,8 @@ export class SignUpWizardComponent {
   public accountData: accountInformation;
   public addressData: addressInformation;
 
-  public theme_default3 = '#ff5c41';
-  public theme_default4 = '#ff8c41';
+  public theme_default3 = '#ff0000';
+  public theme_default4 = '#ff0000';
 
   ngOnInit() {
     document.documentElement.style.setProperty('--theme-default', this.theme_default3);
