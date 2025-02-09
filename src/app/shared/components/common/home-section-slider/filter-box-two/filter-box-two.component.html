@@ -1,42 +1,56 @@
-<div class="row review-form gx-3">
-  <div class="col-lg-4 col-md-6">
-    <div class="form-group">
-      <input type="text" class="form-control" value="" placeholder="Search your location ">
+<div class="row review-form gx-3 w-100">
+  <div class="col-12">
+    <div class="form-inline-container">
+      <!-- Location Input -->
+      <div class="form-group">
+        <input type="text" class="form-control" value="" placeholder="Search your location">
+      </div>
+      <div class="form-group">
+        <select class="form-control">
+          <option value="">Ville</option>
+          @for(city of cities; track city){
+            <option value="{{ city.value }}">{{ city.title }}</option>
+          }
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="form-control">
+          <option value="">Zone</option>
+          @for(zone of zones; track zone){
+            <option value="{{ zone.value }}">{{ zone.title }}</option>
+          }
+        </select>
+      </div>
+      
+      <!-- Property Type Dropdown -->
+      <div class="form-group">
+        <select class="form-control">
+          <option value="">Property Type</option>
+          @for(type of propertyType; track type){
+            <option value="{{ type.value }}">{{ type.title }}</option>
+          }
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="form-control">
+          <option value="">Quartier</option>
+          @for(district of districts; track district) {
+            <option value="" style="color: #F60; font-weight:bold">
+              ---Ville : {{ district.city }}---
+            </option>
+            @for(option of district.options; track option) {
+              <option value="{{ option.id }}">{{ option.title }}</option>
+            }
+          }
+        </select>
+      </div>
+    
+      <!-- Search Button -->
+      <div class="form-group">
+        <button type="button" class="btn btn-gradient color-4" [routerLink]="['/listing/grid-view/2-grid/left-sidebar']">
+          Search
+        </button>
+      </div>
     </div>
-  </div>
-  <div class="col-lg-4 col-sm-6">
-   <select class="form-control">
-      <option value="">Property Type</option>
-      @for(type of propertyType; track type){
-        <option value="{{ type.value }}">{{ type.title }}</option>
-      }
-    </select>
-  </div>
-  <div class="col-lg-4 col-sm-6">
-    <select class="form-control">
-      <option value="">Max Rooms</option>
-      @for(room of rooms; track room){
-        <option value="{{ room.value }}">{{ room.title }}</option>
-      }
-    </select>
-  </div>
-  <div class="col-lg-4 col-sm-6">
-    <select class="form-control">
-      <option value="">Bed</option>
-      @for(bed of beds; track bed){
-        <option value="{{ bed.value }}">{{ bed.title }}</option>
-      }
-    </select>
-  </div>
-  <div class="col-lg-4 col-sm-6">
-    <select class="form-control">
-      <option value="">Bath</option>
-      @for(bath of baths; track bath){
-        <option value="{{ bath.value }}">{{ bath.title }}</option>
-      }
-    </select>
-  </div>
-  <div class="col-lg-4 col-md-6">
-    <button type="button" class="btn btn-gradient color-4" [routerLink]="['/listing/grid-view/2-grid/left-sidebar']">Search</button>
   </div>
 </div>

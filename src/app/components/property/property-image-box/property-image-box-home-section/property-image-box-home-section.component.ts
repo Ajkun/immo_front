@@ -14,9 +14,16 @@ export class PropertyImageBoxHomeSectionComponent {
 
   @Input() propertyImageSliderImage: any;
   @Input() propertyData: any;
-  @Input() property : property;
+  @Input() property : property | any;
+  @Input() propertyImages : any;
+  firstImage: any;
 
   constructor(public gallery: Gallery, public lightbox: Lightbox) { }
+
+
+  ngOnInit() {
+    this.firstImage = this.property.newImage[0]; // Get the first image
+  }
 
   openLightBox(url: string) {
     const lightboxRef = this.gallery.ref('lightbox');

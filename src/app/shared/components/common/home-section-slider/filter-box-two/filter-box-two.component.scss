@@ -1,0 +1,18 @@
+.form-inline-container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure everything stays in one row */
+    gap: 10px; /* Space between form elements */
+    width: 100%; /* Full width of the row */
+  }
+  
+  .form-inline-container .form-group {
+    flex: 1; /* Allow inputs and dropdowns to scale proportionally */
+    margin-bottom: 0; /* Remove extra margin for alignment */
+  }
+  
+  .form-inline-container button {
+    flex: 0 0 auto; /* Ensure the button stays fixed in size */
+    width: auto; /* Keep the button a reasonable width */
+    min-width: 120px; /* Optional: Define a minimum width for the button */
+  }
+  

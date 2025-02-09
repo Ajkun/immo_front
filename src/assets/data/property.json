@@ -2,9 +2,11 @@
     {
       "id": 1,
       "type": "Appartement",
-      "img": [
-        { "src": "https://example.com/img1.jpg", "alt": "Salon" },
-        { "src": "https://example.com/img2.jpg", "alt": "Chambre" }
+      "newImage": [
+        { "src": "assets/images/property/casa-maison-1.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/casa-maison-2.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/casa-maison-3.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/casa-maison-4.webp", "alt": "Jardin" }
       ],
       "thumbnail": "https://example.com/thumb1.jpg",
       "propertyStatus": "À Vendre",
@@ -29,9 +31,11 @@
     {
       "id": 2,
       "type": "Maison",
-      "img": [
-        { "src": "https://example.com/img3.jpg", "alt": "Vue de face" },
-        { "src": "https://example.com/img4.jpg", "alt": "Jardin" }
+      "newImage": [
+        { "src": "assets/images/property/fes-maison-1.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/fes-maison-2.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/fes-maison-3.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/fes-maison-4.webp", "alt": "Jardin" }
       ],
       "thumbnail": "https://example.com/thumb2.jpg",
       "propertyStatus": "À Louer",
@@ -57,8 +61,11 @@
     {
       "id": 3,
       "type": "Villa",
-      "img": [
-        "name image  "," name image 2"
+      "newImage": [
+        { "src": "assets/images/property/marrakech-maison-1.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/marrakech-maison-2.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/marrakech-maison-3.webp", "alt": "Vue de face" },
+        { "src": "assets/images/property/marrakech-maison-4.webp", "alt": "Jardin" }
       ],
       "thumbnail": "https://example.com/thumb3.jpg",
       "propertyStatus": "À Vendre",

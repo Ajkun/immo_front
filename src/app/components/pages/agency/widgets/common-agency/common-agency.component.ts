@@ -1,8 +1,9 @@
 import { Component, Input } from '@angular/core';
-import { agencyAgent } from '../../../../../shared/interface/property';
+import { agency, agencyAgent } from '../../../../../shared/interface/property';
 import { PropertyBoxGridService } from '../../../../../shared/services/property-box-grid.service';
 import { AgencyAgentsComponent } from '../agency-agents/agency-agents.component';
 import { CommonModule } from '@angular/common';
+import { PropertyService } from '../../../../../shared/services/property.service';
 
 @Component({
   selector: 'app-common-agency',
@@ -30,9 +31,18 @@ export class CommonAgencyComponent {
   public col_xl_6: boolean = false;
   public col_xl_4: boolean
 
-  constructor(private propertyBoxGridService: PropertyBoxGridService) {}
+  public agencies: agency[];
+
+  constructor(private propertyBoxGridService: PropertyBoxGridService, private propertyService: PropertyService ) {}
 
   ngOnInit() {
+
+    this.propertyService.agencyData().subscribe((response) => {
+      this.agencies = response.agencyData;
+    });
+
+
+
     if (this.type == 'grid-2') {
       this.propertyBoxGridService.col_lg_6 = true;
       this.propertyBoxGridService.col_md_6 = true;

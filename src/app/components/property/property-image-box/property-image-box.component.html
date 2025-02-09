@@ -2,7 +2,7 @@
   <div class="container-fluid">
     @if(propertyData){
       <div class="zoom-image-box zoom-gallery-multiple">
-        <app-property-image-box-home-section [propertyImageSliderImage]="propertyData.propertyImageSliderImage" [propertyData]="imageID"></app-property-image-box-home-section>
+        <app-property-image-box-home-section [property]="property" [propertyImageSliderImage]="propertyData.propertyImageSliderImage" [propertyData]="imageID"></app-property-image-box-home-section>
       </div>
     }
   </div>
@@ -14,8 +14,8 @@
 
 <section class="single-property mt-0 pt-0">
   <div class="container">
-    <div class="row ratio_55">
-      <div class="col-xl-9 col-lg-8">
+    <div class="row ">
+      <div>
         <div class="description-section tab-description">
           <div class="description-details">
             <app-property [propertyData]="propertyData" [propertyDetailsData]="propertyDetailsData" [type]="'basic'"></app-property>

@@ -23,7 +23,7 @@ export class HomeDetailsComponent {
     window.print()
   }
 
-  onOnit() {
-    console.log(this.property)
+  ngOnInit() {
+    console.log(this.property?.city)
   }
 }

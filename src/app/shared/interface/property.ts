@@ -19,8 +19,32 @@ export interface property {
   agencyNumber: number;
   agencyId : number;
   percentagePromotion: number;
-  
+  newImage: any[];
 }
+
+export interface newImage{
+  src: string
+  alt: string
+}
+
+//// agency
+export interface agency{
+  id: number;
+  title: string; // agencies name 
+  subTitle: string ; // ??
+  img: string;
+  location: string; // la ville
+  adress: string; // adresse complet 
+  mobile: string;
+  email: string;
+  link: string; 
+  property: number;
+  propertylist: property[]; // hadi
+  aboutAgency: description[]; 
+  description: string;
+  agencyIcon : string;
+}
+
 
 export interface agencies {
   id : number;
@@ -38,23 +62,6 @@ export interface newAgence {
   adress : string;
 }
 
-export interface agency{
-  id: number;
-  title: string; // agencies name 
-  subTitle: string ;
-  img: string;
-  location: string;
-  mobile: string;
-  email: string;
-  link: string; 
-  property: number;
-  propertylist: property[]; 
-  aboutAgency: description[]; 
-  description: string;
-  agencyIcon : string;
-}
-
-
 export interface blog {
   id: number;
   images: img[];
@@ -67,7 +74,6 @@ export interface blog {
   description: description[]
 }
 
-//// agency
 
 
 export interface images {

@@ -202,11 +202,11 @@ header{
 }
 header {
   z-index: 3;
-  position: absolute;
+ 
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba($black, 0.5);
+  background-color: rgba(222, 225, 232, 0.5);
   transition: 0.8s;
   &.fixed-header{
     &.fixed{
@@ -232,7 +232,7 @@ header {
   }
 
   &.header-2 {
-    background-color: rgba($black, 0.6);
+    background-color: rgba(222, 225, 232, 0.5);
     &.fixed {
       background-color: $black;
     }
@@ -937,7 +937,7 @@ header {
         }
         >a {
           display: block;
-          color: white;
+          color: red;
           font-size: 14px;
           font-family: $font_2, $font_3;
           font-weight: 500;
@@ -1153,7 +1153,7 @@ header {
     .header-right {
       li {
         a {
-          color: $white;
+          color: red;
           font-size: 13px;
 
           svg {

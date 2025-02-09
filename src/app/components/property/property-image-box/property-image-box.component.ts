@@ -88,7 +88,6 @@ export class PropertyImageBoxComponent {
     this.propertyService.getPropertyById(id).subscribe(
       (data) => {
         this.property = data;
-       // console.log(data)
       },
       (error) => {
         console.error('Erreur lors de la récupération de la propriété', error);

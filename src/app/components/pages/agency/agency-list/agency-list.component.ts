@@ -18,9 +18,9 @@ export class AgencyListComponent {
   public themeLogo = 'assets/images/logo/2.png';
   public footerLogo = 'assets/images/logo/arai-logo.png';
   public bgImage = 'assets/images/inner-background.jpg';
-  public title = 'Agency List';
+  public title = 'Nos agences';
   public parent = 'Home';
-  public child = 'Agency List';
+  public child = 'Nos agences';
 
   public agencyData: agencyAgent[];
   public propertyData: propertyDetailsData;

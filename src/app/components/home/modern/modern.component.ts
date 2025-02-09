@@ -12,6 +12,7 @@ import { EnterpriseBrandComponent } from "../enterprise/enterprise-brand/enterpr
 import { EnterprisePropertyServiceComponent } from "../enterprise/enterprise-property-service/enterprise-property-service.component";
 import { ModernHomeSectionComponent } from './modern-home-section/modern-home-section.component';
 import { AgencyCarouselComponent } from '../agency-carousel/agency-carousel.component';
+import { SearchTabHomeSectionComponent } from '../search-tab/search-tab-home-section/search-tab-home-section.component';
 
 
 @Component({
@@ -20,7 +21,7 @@ import { AgencyCarouselComponent } from '../agency-carousel/agency-carousel.comp
     templateUrl: './modern.component.html',
     styleUrls: ['./modern.component.scss'],
     imports: [AgencyCarouselComponent, EnterpriseLatestPropertyComponent, EnterpriseLookingForComponent, EnterprisePropertyOfDayComponent, 
-      EnterpriseFeaturedCityComponent, EnterpriseBannerComponent, EnterprisePeopleSayComponent, 
+      EnterpriseFeaturedCityComponent, EnterpriseBannerComponent, EnterprisePeopleSayComponent,SearchTabHomeSectionComponent , 
       EnterpriseLatestBlogComponent, EnterpriseBrandComponent, EnterprisePropertyServiceComponent,ModernHomeSectionComponent]
 })
 export class ModernComponent {

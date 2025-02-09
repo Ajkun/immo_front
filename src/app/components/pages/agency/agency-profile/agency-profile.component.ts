@@ -35,18 +35,25 @@ export class AgencyProfileComponent {
   public theme_default3 = '#ff0000';
   public theme_default4 = '#ff0000';
 
+  public agency : agency | undefined;
+  public agencies : agency[] | undefined;
+
   constructor(private propertyService: PropertyService, private router: Router, private route: ActivatedRoute) {}
 
   ngOnInit() {
     document.documentElement.style.setProperty('--theme-default', this.theme_default3);
     document.documentElement.style.setProperty('--theme-default3', this.theme_default3);
     document.documentElement.style.setProperty('--theme-default4', this.theme_default4);
-
+    this.loadAgency('1');
     this.propertyService.agencyData().subscribe((response) => {
       this.aboutAgency = response.agencyData;
       this.agentsData = response.agentsData;
     });
+
+    
   }
+
+  
 
   ngOnDestroy(): void {
     document.documentElement.style.removeProperty('--theme-default');
@@ -62,6 +69,30 @@ export class AgencyProfileComponent {
       skipLocationChange: false, // do trigger navigation
     });
   }
+
+  loadAgency(id: string) {
+    this.propertyService.getAgencyById(id).subscribe(
+      (data) => {
+        this.agency = data;
+      },
+      (error) => {
+        console.error('Erreur lors de la récupération de la propriété', error);
+      }
+    );
+  }
+
+ /* loadAgencies() {
+    this.propertyService.getProperties().subscribe(
+      (data : any) => { // response
+        this.agencies = data; // Stocke les propriétés récupérées
+      
+      },
+      (error) => {
+        console.error('Erreur lors de la récupération des propriétés', error);
+      }
+    );
+  }*/
+
 
   receivePropertyTotalData(value: number) {
     this.totalProperty = value;

@@ -23,11 +23,15 @@ import { CommonModule } from '@angular/common';
 
 export class PropertyBoxTwoComponent implements OnInit {
   properties: any[] = [];
+  mainDisplay: string = 'standard';
+  itemDisplay: string = 'standard-item';
+  @Input() typeDisplayValue: string; 
 
   constructor(private propertyService: PropertyService) {}
 
   ngOnInit() {
     this.loadProperties();
+    this.typeDisplay(this.typeDisplayValue);
   }
 
   loadProperties() {
@@ -40,5 +44,16 @@ export class PropertyBoxTwoComponent implements OnInit {
         console.error('Erreur lors de la récupération des propriétés', error);
       }
     );
+  }
+
+  typeDisplay(typeDisplayValue: any){
+    if(typeDisplayValue == "menu") {
+      this.mainDisplay = "menu";
+      this.itemDisplay = "menu-standard-item";
+    }
+    if(typeDisplayValue == "property"){
+      this.mainDisplay = "menu";
+      this.itemDisplay = "property-item";
+    }
   }
 }

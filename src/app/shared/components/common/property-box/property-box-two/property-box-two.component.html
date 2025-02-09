@@ -1,8 +1,8 @@
-<div *ngIf="properties && properties.length > 0">
+<div [ngClass]="mainDisplay" *ngIf="properties && properties.length > 0">
 
-  <div *ngFor="let property of properties" class="property-box">
-    <div class="property-image">
-      <!-- Utilisation du composant d'affichage d'images -->
+  <div [ngClass]="itemDisplay" *ngFor="let property of properties" class="property-box">
+  <!--  <div class="property-image">
+       Utilisation du composant d'affichage d'images -->
       <!-- <app-image-slider [latestForRentData]="property.media" ></app-image-slider> -->
       <!-- <div *ngIf="property.media && property.media.length > 0" class="w-100"> -->
         <!-- <h4>Images:</h4> -->
@@ -39,15 +39,15 @@
           <app-feather-icons [icon]="'heart'"></app-feather-icons>
         </a>
       </div>-->
-         <!-- <img *ngFor="let media of property.media" [src]="media.url" alt="Image de la propriété" width="500">  -->
+         <!-- <img *ngFor="let media of property.media" [src]="media.url" alt="Image de la propriété" width="500">  
          <img *ngIf="property.image" [src]="property.image" alt="Property Image" class="img-fluid" />
 
 
-    </div>
+    </div>-->
     
 
     <!-- Détails de la propriété -->
-    <div class="property-details">
+    <div class="property-details " >
       <span class="font-roboto">{{ property.city }}</span>
 
       <!-- Agency logo -->

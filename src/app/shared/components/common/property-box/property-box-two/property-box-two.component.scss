@@ -18,3 +18,16 @@ owl-carousel-o::ng-deep{
   width: 130px;
   height: auto; 
 }
+
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu-standard-item{
+  flex-basis: 33.33%;  
+}
+
+.property-item{
+  flex-basis: 50%;  
+}

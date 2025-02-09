@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
-import { agencyData, agentsData, agentsDetails, bannerData, blogDetailsData, brandData, currency, faqData, featuredPropertyData, happyClientsData, homeSectionData, latestBlogData, latestForRent, latestForRentData, latestForSale, latestForSaleData, newOfferData, peopleSayData, pricingPlanData, privacyData, propertyCityData, propertyOfDayData, providedServicesData, sliderData, termsData } from '../interface/property';
+import { agency, agencyData, agentsData, agentsDetails, bannerData, blogDetailsData, brandData, currency, faqData, featuredPropertyData, happyClientsData, homeSectionData, latestBlogData, latestForRent, latestForRentData, latestForSale, latestForSaleData, newOfferData, peopleSayData, pricingPlanData, privacyData, propertyCityData, propertyOfDayData, providedServicesData, sliderData, termsData } from '../interface/property';
 import { property } from '../interface/property';
 
 
@@ -10,8 +10,8 @@ import { property } from '../interface/property';
 })
 
 export class PropertyService {
-  private apiUrl = ' http://127.0.0.1:8000/api/properties';
-   //private apiUrl = 'assets/data/property.json';
+  //private apiUrl = ' http://127.0.0.1:8000/api/properties';
+   private apiUrl = 'assets/data/property.json';
   private apiCarousel = 'assets/data/carousel.json'
   constructor(private http: HttpClient) { }
 
@@ -20,9 +20,20 @@ export class PropertyService {
     return this.http.get<any[]>(this.apiUrl);
   }
 
-  getPropertyById(id: string): Observable<property | undefined> {
+ /* getPropertyById(id: string): Observable<property | undefined> {
       return this.http.get<property>(`http://127.0.0.1:8000/api/properties/${id}`);
+  }*/
 
+  getPropertyById(id: string): Observable<property | undefined> {
+    return this.getProperties().pipe(
+      map((properties: property[]) => properties.find((property) => property.id.toString() === id))
+    );
+  }
+
+  getAgencyById(id: string): Observable<agency | undefined> {
+    return this.getAgencies().pipe(
+      map((properties: agency[]) => properties.find((property) => property.id.toString() === id))
+    );
   }
 
   getAgenciesCarousel():Observable<any[]> {
@@ -62,8 +73,8 @@ export class PropertyService {
   }
 
   // Méthode pour récupérer les agences
-  getAgencies(): Observable<any[]> {
-    return this.http.get<any[]>('assets/data/agencies.json'); // Remplacez par votre chemin d'API
+  getAgencies(): Observable<agency[]> {
+    return this.http.get<agency[]>('assets/data/agencies.json'); // Remplacez par votre chemin d'API
   }
 
   // Home Slider Data

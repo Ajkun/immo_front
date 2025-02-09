@@ -16,6 +16,10 @@ export default[
     path: 'agency-list',
     component: AgencyListComponent
   },
+  {
+    path: 'agency/:id',
+    component: AgencyProfileComponent
+  }
 ] as Routes;
 
 

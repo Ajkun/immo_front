@@ -1,0 +1,13 @@
+.full-width {
+    width: 100%; /* Ensure the parent div spans the full width */
+}
+  
+app-filter-box-two {
+width: 100%; /* Make the component fill the parent */
+max-width: 100%; /* Prevent overflow */
+}
+
+.search-bar{
+    margin-top: 25px;
+}
+

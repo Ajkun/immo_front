@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { agencyAgent } from '../../../../../shared/interface/property';
+import { agencies, agency, agencyAgent } from '../../../../../shared/interface/property';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
@@ -13,16 +13,17 @@ import { CommonModule } from '@angular/common';
 export class AgencyAgentsComponent {
 
   @Input() agentsData: agencyAgent;
+  @Input() agency : agency;
   
   public isMobile: boolean = false;
   public mobileNumber: string
 
   ngOnInit(){
-    this.mobileNumber = this.agentsData.mobile.replace(
-      this.agentsData.mobile.slice(-4), '****' );
+    this.mobileNumber = this.agency.mobile.replace(
+      this.agency.mobile.slice(-4), '****' );
   }
 
-  showMobile(data: agencyAgent){
+  showMobile(data: agency){
     this.isMobile =! this.isMobile;
     if(this.isMobile){
       this.mobileNumber = data.mobile

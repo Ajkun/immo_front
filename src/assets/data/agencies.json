@@ -1,0 +1,118 @@
+[
+    {
+        "id": 1,
+        "title": "Agence Immobilier Niya",
+        "subTItle": "Dream house",
+        "img": "assets/images/agency/logo_cabinet.png",
+        "location": "Rabat",
+        "adress": "Residence Assalam Imm N 34 Studio N 1 Rue Jbal Tazzeka Adal - Rabat",
+        "mobile": "05-37-77-01-66",
+        "email": "contact@arairabat.ma",
+        "link": "http://arairabat.ma/",
+        "property": 10,
+        "aboutAgency": [
+        {
+            "details": "Bienvenue chez Immobilier Niya, votre agence immobilière de confiance basée à Rabat, la capitale vibrante du Maroc. Spécialisés dans la vente, la location et la gestion de biens immobiliers, nous nous engageons à offrir un service professionnel, personnalisé et transparent à chacun de nos clients."
+        },
+        {
+            "details": "Que vous recherchiez une villa élégante à Souissi, un appartement moderne au cœur de l’Agdal, ou un espace commercial stratégique au centre-ville, Immobilier Niya met à votre disposition une large gamme de biens soigneusement sélectionnés pour répondre à vos besoins."
+        },
+        {
+            "details": "Notre équipe expérimentée et passionnée vous accompagne à chaque étape de votre projet immobilier, en vous offrant des conseils d’experts et en veillant à ce que votre expérience soit fluide et satisfaisante. Faites confiance à Immobilier Niya, là où votre rêve immobilier devient réalité. Contactez-nous dès aujourd’hui et laissez-nous vous aider à trouver la propriété idéale à Rabat !"
+        }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Agence Immobilier Niya",
+        "subTItle": "Dream house",
+        "img": "assets/images/agency/logo_cabinet.png",
+        "location": "Rabat",
+        "adress": "Residence Assalam Imm N 34 Studio N 1 Rue Jbal Tazzeka Adal - Rabat",
+        "mobile": "05-37-77-01-66",
+        "email": "contact@arairabat.ma",
+        "link": "http://arairabat.ma/",
+        "property": 10,
+        "aboutAgency": [
+        {
+            "details": "Bienvenue chez Immobilier Niya, votre agence immobilière de confiance basée à Rabat, la capitale vibrante du Maroc. Spécialisés dans la vente, la location et la gestion de biens immobiliers, nous nous engageons à offrir un service professionnel, personnalisé et transparent à chacun de nos clients."
+        },
+        {
+            "details": "Que vous recherchiez une villa élégante à Souissi, un appartement moderne au cœur de l’Agdal, ou un espace commercial stratégique au centre-ville, Immobilier Niya met à votre disposition une large gamme de biens soigneusement sélectionnés pour répondre à vos besoins."
+        },
+        {
+            "details": "Notre équipe expérimentée et passionnée vous accompagne à chaque étape de votre projet immobilier, en vous offrant des conseils d’experts et en veillant à ce que votre expérience soit fluide et satisfaisante. Faites confiance à Immobilier Niya, là où votre rêve immobilier devient réalité. Contactez-nous dès aujourd’hui et laissez-nous vous aider à trouver la propriété idéale à Rabat !"
+        }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Agence Immobilière Atlas",
+        "subTItle": "Le choix parfait",
+        "img": "assets/images/agency/logo_atlas.png",
+        "location": "Casablanca",
+        "adress": "3 Rue des Palmiers, Quartier Oasis - Casablanca",
+        "mobile": "05-22-45-78-90",
+        "email": "contact@atlasimmo.ma",
+        "link": "http://atlasimmo.ma/",
+        "property": 15,
+        "aboutAgency": [
+        {
+            "details": "Atlas Immobilier est votre partenaire idéal pour vos projets immobiliers à Casablanca. Nous sommes spécialisés dans la vente, l’achat et la location de biens résidentiels et commerciaux."
+        },
+        {
+            "details": "Avec une forte présence dans les quartiers de prestige tels que Californie et Anfa, nous proposons une large sélection de propriétés répondant aux attentes des clients les plus exigeants."
+        },
+        {
+            "details": "Faites confiance à notre équipe dédiée pour un accompagnement sur mesure, allant de la recherche de votre bien idéal jusqu’à la finalisation de votre projet. Atlas Immobilier, votre avenir commence ici."
+        }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Cabinet Immo Horizons",
+        "subTItle": "Votre avenir, notre priorité",
+        "img": "assets/images/agency/logo_horizons.png",
+        "location": "Marrakech",
+        "adress": "Avenue Mohamed V, Immeuble Horizon Plaza, Gueliz - Marrakech",
+        "mobile": "05-24-33-22-11",
+        "email": "contact@immohorizons.ma",
+        "link": "http://immohorizons.ma/",
+        "property": 20,
+        "aboutAgency": [
+        {
+            "details": "Implanté au cœur de Marrakech, Cabinet Immo Horizons est un acteur majeur dans l’immobilier résidentiel et touristique. Nous combinons expertise locale et engagement envers l’excellence."
+        },
+        {
+            "details": "Nous proposons une gamme variée de biens immobiliers, allant des riads traditionnels de la médina aux villas modernes situées dans les environs de la ville ocre."
+        },
+        {
+            "details": "Notre mission est de transformer vos idées en réalité grâce à un service personnalisé et des solutions immobilières adaptées. Explorez les opportunités avec Immo Horizons dès aujourd’hui !"
+        }
+        ]
+    },
+    {
+        "id": 5,
+        "title": "Immobilier Zen",
+        "subTitle": "Vivre autrement",
+        "img": "assets/images/agency/logo_zen.png",
+        "location": "Tanger",
+        "adress": "15 Boulevard Pasteur, Résidence Bahia - Tanger",
+        "mobile": "05-39-99-88-77",
+        "email": "contact@zenimmo.ma",
+        "link": "http://zenimmo.ma/",
+        "property": 12,
+        "aboutAgency": [
+        {
+            "details": "À Tanger, Immobilier Zen vous offre une expérience unique dans la recherche et la gestion de biens immobiliers, avec un accent sur le confort et la tranquillité."
+        },
+        {
+            "details": "Nos services incluent la vente, la location et l’accompagnement dans l’acquisition de propriétés dans des zones stratégiques comme Malabata et Cap Spartel."
+        },
+        {
+            "details": "Avec Immobilier Zen, simplifiez vos démarches et réalisez vos rêves d’habitat en toute sérénité. Découvrez une nouvelle approche de l’immobilier à Tanger."
+        }
+        ]
+    }
+        
+]

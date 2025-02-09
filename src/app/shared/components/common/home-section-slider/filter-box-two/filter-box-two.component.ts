@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { baths, beds, propertyType, rooms } from '../../../../data/advance-filter';
+import { baths, beds, propertyType, rooms, moroccanCities, zones, districts } from '../../../../data/advance-filter';
 
 @Component({
   selector: 'app-filter-box-two',
@@ -16,5 +16,8 @@ export class FilterBoxTwoComponent {
   public rooms = rooms;
   public beds = beds;
   public baths = baths;
+  public cities = moroccanCities;
+  public zones = zones;
+  public districts = districts;
 
 }

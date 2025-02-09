@@ -16,7 +16,7 @@ export class ContactUs2Component {
 
   public themeLogo = 'assets/images/logo/2.png';
   public footerLogo = 'assets/images/logo/arai-logo.png';
-  public bgImage = 'http://arairabat.ma/img/img-site/about-us.jpg';
+  public bgImage = 'assets/images/about/about-us-arai.jpg';
   public title = 'Contact Us';
   public parent = 'Home';
   public child = 'Contact Us';
