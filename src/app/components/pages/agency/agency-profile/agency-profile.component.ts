@@ -24,6 +24,7 @@ export class AgencyProfileComponent {
   public title = 'Profile';
   public parent = 'Home';
   public child = 'Agency Profile';
+  public getId: string;
 
   public aboutAgency: agency[];
   public agentsData: agencyAgent[];
@@ -38,18 +39,28 @@ export class AgencyProfileComponent {
   public agency : agency | undefined;
   public agencies : agency[] | undefined;
 
-  constructor(private propertyService: PropertyService, private router: Router, private route: ActivatedRoute) {}
+  constructor(private propertyService: PropertyService, private router: Router, private route: ActivatedRoute) {
+    this.route.queryParams.subscribe((params) => {
+      this.getId = params['id']
+    })
+  }
 
   ngOnInit() {
     document.documentElement.style.setProperty('--theme-default', this.theme_default3);
     document.documentElement.style.setProperty('--theme-default3', this.theme_default3);
     document.documentElement.style.setProperty('--theme-default4', this.theme_default4);
-    this.loadAgency('1');
+    //this.loadAgency('2');
     this.propertyService.agencyData().subscribe((response) => {
       this.aboutAgency = response.agencyData;
       this.agentsData = response.agentsData;
     });
 
+    this.route.paramMap.subscribe(params => {
+      const id = params.get('id');
+      if (id) {
+        this.loadAgency(id);
+      }
+    });
     
   }
 
@@ -74,6 +85,7 @@ export class AgencyProfileComponent {
     this.propertyService.getAgencyById(id).subscribe(
       (data) => {
         this.agency = data;
+        console.log(data);
       },
       (error) => {
         console.error('Erreur lors de la récupération de la propriété', error);

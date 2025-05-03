@@ -11,6 +11,6 @@ import { FeatherIconsComponent } from '../../../../../shared/components/ui/feath
 })
 export class AboutAgencyComponent {
 
-  @Input() aboutAgency: agency;
+  @Input() aboutAgency: agency | undefined;
   
 }

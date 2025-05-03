@@ -17,24 +17,24 @@
         }
       </div>
     }-->
-    @if(property.newImage){
+    @if(property.images){
         <div class="col-md-6 p-0" gallerize>           
-                <a class="bg-size" [style.background-image]="'url('+property.newImage[0].src+')'" (click)="openLightBox(property.newImage[0].src)">
-                  <img [src]="property.newImage[0].src" class="bg-img" alt="property-image" style="display: none;">
+                <a class="bg-size" [style.background-image]="'url('+property.img[0].src+')'" (click)="openLightBox(property.newImage[0].src)">
+                  <img [src]="property.img[0]" class="bg-img" alt="property-image" style="display: none;">
                 </a>               
         </div>
   }@else {
     <div class="col-md-6 p-0" gallerize>
-      <a class="bg-size" [style.background-image]="'url(assets/images/property/4.jpg)'" (click)="open('assets/images/property/4.jpg')">
-        <img [src]="'assets/images/property/4.jpg'" class="bg-img" alt="property-image" style="display: none;">
+      <a class="bg-size" [style.background-image]="property.img[0]" (click)="open(property.img[0])">
+        <img [src]="property.img[0]" class="bg-img" alt="property-image" style="display: none;">
       </a>
     </div>
   }
   <div class="khrebi9a row">
-    @for(image of property.newImage; track image){
+    @for(image of property.img; track image){
       <div class="col-md-6 col-6 p-0">    
-          <a href="javascript:void(0)" class="bg-size" [style.background-image]="'url('+image.src+')'" style="display: block;" (click)="openLightBox(image.src)">
-            <img [src]="image.src" class="bg-img" alt="property-image" style="display: none;">
+          <a href="javascript:void(0)" class="bg-size" [style.background-image]="'url('+image+')'" style="display: block;" (click)="openLightBox(image)">
+            <img [src]="image" class="bg-img" alt="property-image" style="display: none;">
           </a>
       </div>    
     }

@@ -5,10 +5,6 @@ import { AgencyProfileComponent } from './agency-profile/agency-profile.componen
 
 export default[
   {
-    path: 'agency-profile',
-    component: AgencyProfileComponent,
-  },
-  {
     path: 'agency-grid',
     component: AgencyGridComponent,
   },

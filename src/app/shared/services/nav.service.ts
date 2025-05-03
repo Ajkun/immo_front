@@ -946,7 +946,7 @@ export class NavService {
       right: true,
       level: 1,
       type: 'sub',
-      path : 'page/agency/agency-profile'
+      path : 'page/agency/agency-list'
      /* children: [
         {
           title: 'Agent Profile',

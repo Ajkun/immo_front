@@ -37,8 +37,9 @@ export class PropertyBoxTwoComponent implements OnInit {
   loadProperties() {
     this.propertyService.getProperties().subscribe(
       (data : any) => { // response
-        this.properties = data; // Stocke les propriétés récupérées
-      // console.log(data)
+        this.properties = data.member; // Stocke les propriétés récupérées
+       //console.log(data.member)
+      
       },
       (error) => {
         console.error('Erreur lors de la récupération des propriétés', error);

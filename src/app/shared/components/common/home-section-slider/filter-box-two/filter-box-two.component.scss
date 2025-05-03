@@ -6,8 +6,13 @@
   }
   
   .form-inline-container .form-group {
-    flex: 1; /* Allow inputs and dropdowns to scale proportionally */
-    margin-bottom: 0; /* Remove extra margin for alignment */
+    flex: 1 0 21%; /* Allow inputs and dropdowns to scale proportionally */
+    margin: 5px;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
   }
   
   .form-inline-container button {

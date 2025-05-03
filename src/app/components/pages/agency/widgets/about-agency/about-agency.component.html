@@ -2,15 +2,15 @@
   <div class="row">
     <div class="col-sm-6 ratio_landscape">
       <div class="agent-image">
-        <img [src]="aboutAgency.img" class="img-fluid bg-img" alt="agency-image">
+        <img [src]="aboutAgency ? aboutAgency.img : '' " class="img-fluid bg-img" alt="agency-image">
        <!-- <span class="label label-shadow">{{ aboutAgency.property }} Properties</span>-->
       </div>
     </div>
     <div class="col-sm-6">
       <div class="agent-wrap">
         <div class="our-agent-details">
-          <h3>{{ aboutAgency.title }}</h3>
-          <h6>{{ aboutAgency.subTitle }}</h6>
+          <h3>{{ aboutAgency ? aboutAgency.title : "" }}</h3>
+          <h6>{{ aboutAgency ? aboutAgency.subTitle : "" }}</h6>
           <ul>
             <li>
               <div class="media">
@@ -18,7 +18,7 @@
                   <app-feather-icons [icon]="'map-pin'"></app-feather-icons>
                 </div>
                 <div class="media-body">
-                  <h6>{{ aboutAgency.adress }}</h6>
+                  <h6>{{ aboutAgency ? aboutAgency.adress : "" }}</h6>
                 </div>
               </div>
             </li>
@@ -28,7 +28,7 @@
                   <app-feather-icons [icon]="'phone-call'"></app-feather-icons>
                 </div>
                 <div class="media-body">
-                  <h6>{{ aboutAgency.mobile }}</h6>
+                  <h6>{{ aboutAgency ? aboutAgency.mobile : "" }}</h6>
                 </div>
               </div>
             </li>
@@ -38,7 +38,7 @@
                   <app-feather-icons [icon]="'mail'"></app-feather-icons>
                 </div>
                 <div class="media-body">
-                  <h6>{{ aboutAgency.email }}</h6>
+                  <h6>{{aboutAgency ?  aboutAgency.email : "" }}</h6>
                 </div>
               </div>
             </li>
@@ -48,7 +48,7 @@
                   <app-feather-icons [icon]="'link'"></app-feather-icons>
                 </div>
                 <div class="media-body">
-                  <h6><a href="javascript:void(0)">{{ aboutAgency.link }}</a></h6>
+                  <h6><a href="javascript:void(0)">{{aboutAgency ?  aboutAgency.link  : ""}}</a></h6>
                 </div>
               </div>
             </li>
@@ -67,8 +67,8 @@
 <div class="about-agent theme-card">
   <h3>About the agency</h3>
   <div class="row">
-    @for(details of aboutAgency.aboutAgency; track details){
+  <!--  @for(details of aboutAgency.aboutAgency; track details){
       <p class="font-roboto col-xl-4"> {{ details.details }} </p>
-    }
+    }-->
   </div>
 </div>

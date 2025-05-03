@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams  } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, map } from 'rxjs';
 import { agency, agencyData, agentsData, agentsDetails, bannerData, blogDetailsData, brandData, currency, faqData, featuredPropertyData, happyClientsData, homeSectionData, latestBlogData, latestForRent, latestForRentData, latestForSale, latestForSaleData, newOfferData, peopleSayData, pricingPlanData, privacyData, propertyCityData, propertyOfDayData, providedServicesData, sliderData, termsData } from '../interface/property';
@@ -10,8 +10,8 @@ import { property } from '../interface/property';
 })
 
 export class PropertyService {
-  //private apiUrl = ' http://127.0.0.1:8000/api/properties';
-   private apiUrl = 'assets/data/property.json';
+  private apiUrl = 'http://admin.arairabat.ma/api/properties';
+//   private apiUrl = 'assets/data/property.json';
   private apiCarousel = 'assets/data/carousel.json'
   constructor(private http: HttpClient) { }
 
@@ -20,15 +20,15 @@ export class PropertyService {
     return this.http.get<any[]>(this.apiUrl);
   }
 
- /* getPropertyById(id: string): Observable<property | undefined> {
-      return this.http.get<property>(`http://127.0.0.1:8000/api/properties/${id}`);
-  }*/
-
   getPropertyById(id: string): Observable<property | undefined> {
+      return this.http.get<property>(`http://admin.arairabat.ma/api/properties/${id}`);
+  }
+
+ /* getPropertyById(id: string): Observable<property | undefined> {
     return this.getProperties().pipe(
       map((properties: property[]) => properties.find((property) => property.id.toString() === id))
     );
-  }
+  }*/
 
   getAgencyById(id: string): Observable<agency | undefined> {
     return this.getAgencies().pipe(
@@ -38,6 +38,42 @@ export class PropertyService {
 
   getAgenciesCarousel():Observable<any[]> {
     return this.http.get<any[]>(this.apiCarousel)
+  }
+
+  searchProperties(filters: {
+    type?: string;
+    city?: string;
+    minPrice?: number;
+    maxPrice?: number;
+    minSurface?: number;
+    maxSurface?: number;
+    rooms?: number;
+    beds?: string;
+    propertyStatus?: string;
+    country?: string;
+    neighborhood?: string;
+    bath?: string;
+    agencyName?: string;
+  }): Observable<property[]> {
+    // Set up HTTP params based on the filters
+    let params = new HttpParams();
+
+    if (filters.type) params = params.append('type', filters.type);
+    if (filters.city) params = params.append('city', filters.city);
+    if (filters.minPrice) params = params.append('minPrice', filters.minPrice.toString());
+    if (filters.maxPrice) params = params.append('maxPrice', filters.maxPrice.toString());
+    if (filters.minSurface) params = params.append('minSurface', filters.minSurface.toString());
+    if (filters.maxSurface) params = params.append('maxSurface', filters.maxSurface.toString());
+    if (filters.rooms) params = params.append('rooms', filters.rooms.toString());
+    if (filters.beds) params = params.append('beds', filters.beds);
+    if (filters.propertyStatus) params = params.append('propertyStatus', filters.propertyStatus);
+    if (filters.country) params = params.append('country', filters.country);
+    if (filters.neighborhood) params = params.append('neighborhood', filters.neighborhood);
+    if (filters.bath) params = params.append('bath', filters.bath);
+    if (filters.agencyName) params = params.append('agencyName', filters.agencyName);
+
+    // Make the HTTP GET request with the filters
+    return this.http.get<property[]>(this.apiUrl, { params });
   }
 
 

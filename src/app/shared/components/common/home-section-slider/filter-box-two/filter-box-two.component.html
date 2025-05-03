@@ -1,7 +1,9 @@
 <div class="row review-form gx-3 w-100">
+<!--
+    
   <div class="col-12">
     <div class="form-inline-container">
-      <!-- Location Input -->
+       Location Input 
       <div class="form-group">
         <input type="text" class="form-control" value="" placeholder="Search your location">
       </div>
@@ -22,10 +24,10 @@
         </select>
       </div>
       
-      <!-- Property Type Dropdown -->
+      Property Type Dropdown 
       <div class="form-group">
         <select class="form-control">
-          <option value="">Property Type</option>
+          <option value="">Type de bien</option>
           @for(type of propertyType; track type){
             <option value="{{ type.value }}">{{ type.title }}</option>
           }
@@ -45,12 +47,151 @@
         </select>
       </div>
     
-      <!-- Search Button -->
+       Search Button 
       <div class="form-group">
         <button type="button" class="btn btn-gradient color-4" [routerLink]="['/listing/grid-view/2-grid/left-sidebar']">
           Search
         </button>
       </div>
+    </div>
+  </div>
+  -->
+  <div class="col-12">
+    <div class="form-inline-container">
+      <form  (submit)="searchProperties()">
+        <!-- Type -->
+
+          <div class="form-group">
+            <select
+              class="form-control"
+              [value]="searchFilters['type']"
+              (input)="updateFilter($event, 'type')"
+            >
+                <option value="">Type de bien</option>
+                @for(type of propertyType; track type){
+                  <option value="{{ type.value }}">{{ type.title }}</option>
+                }
+            </select>
+          </div>
+
+          
+          <!-- city -->
+
+          <div class="form-group">
+            <select
+              class="form-control"
+              [value]="searchFilters['city']"
+              (change)="updateFilter($event, 'city')"
+            >
+              <option value="">Select City</option>
+              @for (city of cities; track city.value) {
+                <option [value]="city.value">{{ city.title }}</option>
+              }
+            </select>
+          </div>
+
+          <!-- Min Price -->
+          <div class="form-group">      
+            <input
+            class="form-control"
+            [value]="searchFilters['minPrice']"
+            (input)="updateFilter($event, 'minPrice')"
+            type="number"
+            placeholder="Min Price"
+          /></div>
+
+
+          <!-- Max Price -->
+          <div class="form-group">      
+            <input
+            class="form-control"
+            [value]="searchFilters['maxPrice']"
+            (input)="updateFilter($event, 'maxPrice')"
+            type="number"
+            placeholder="Max Price"
+          /></div>
+
+          <!-- Min Surface -->
+          <div class="form-group">      
+            <input
+            class="form-control"
+            [value]="searchFilters['minSurface']"
+            (input)="updateFilter($event, 'minSurface')"
+            type="number"
+            placeholder="Min Surface"
+          /></div>
+
+          <!-- Max Surface -->
+          <div class="form-group">      
+            <input
+            class="form-control"
+            [value]="searchFilters['maxSurface']"
+            (input)="updateFilter($event, 'maxSurface')"
+            type="number"
+            placeholder="Max Surface"
+          /></div>
+
+          <!-- Rooms -->
+          <div class="form-group">      
+            <input
+            class="form-control"
+            [value]="searchFilters['rooms']"
+            (input)="updateFilter($event, 'rooms')"
+            type="number"
+            placeholder="Rooms"
+          /></div>
+
+          <!-- Beds -->
+          <div class="form-group">      
+            <input
+            class="form-control"
+            [value]="searchFilters['beds']"
+            (input)="updateFilter($event, 'beds')"
+            placeholder="Beds"
+          /></div>
+
+          <!-- Property Status -->
+          <div class="form-group">      
+            <input
+            class="form-control"
+            [value]="searchFilters['propertyStatus']"
+            (input)="updateFilter($event, 'propertyStatus')"
+            placeholder="Property Status"
+          /></div>
+
+          <!-- Neighborhood -->
+
+          <div class="form-group">
+            <select
+              class="form-control"
+              [value]="searchFilters['neighborhood']"
+              (input)="updateFilter($event, 'neighborhood')"
+            >
+            <option value="">Quartier</option>
+            @for(district of districts; track district) {
+              <option value="" style="color: #F60; font-weight:bold">
+                ---Ville : {{ district.city }}---
+              </option>
+              @for(option of district.options; track option) {
+                <option value="{{ option.id }}">{{ option.title }}</option>
+              }
+            }
+            </select>
+          </div>
+
+          <!-- Bath -->
+          <div class="form-group">      
+            <input
+            class="form-control"
+            [value]="searchFilters['bath']"
+            (input)="updateFilter($event, 'bath')"
+            placeholder="Bath"
+          /></div>
+          
+          <!-- Agency Name -->
+
+        <button class="btn btn-gradient color-4" type="submit">Search</button>
+      </form>
     </div>
   </div>
 </div>
